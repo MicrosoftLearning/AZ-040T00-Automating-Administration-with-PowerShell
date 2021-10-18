@@ -83,18 +83,25 @@ lab:
 ### Task 4: Query service information
 
 1. To find a repository class that contains information about services, enter the following command in the **Windows PowerShell** console, and then select Enter:
+    
     ```powershell
     Get-WmiObject -Namespace root\cimv2 -List | Where Name –like '*service*' | Sort Name
     ```
+    
     Notice the `Win32_Service` class.
+    
 1. To display a list of instance properties and values, enter the following command in the **Windows PowerShell** console, and then select Enter:
+   
    ```powershell
    Get-WmiObject -Class Win32_Service | FL *
    ```
+   
 1. To display the specified information, enter the following command in the **Windows PowerShell** console, and select Enter:
+   
    ```powershell
    Get-WmiObject –Class Win32_Service –Filter "Name LIKE 'S%'" | Select Name,State,StartName
    ```
+   
 1. Leave the **Windows PowerShell** console open for the next exercise.
 
 # Exercise 2: Querying information by using CIM
@@ -102,25 +109,32 @@ lab:
 ### Task 1: Query user accounts
 
 1. To find a repository class that lists user accounts, enter the following command in the **Windows PowerShell** console, and then select Enter:
+   
    ```powershell
    Get-CimClass -ClassName *user*
    ```
+   
    Notice the `Win32_UserAccount` class.
+   
 1. To display a list of class properties, enter the following command in the **Windows PowerShell** console, and then select Enter:
+   
    ```powershell
    Get-CimInstance -Class Win32_UserAccount | Get-Member
    ```
+   
 1. To display the specified information, enter the following command in the **Windows PowerShell** console, and then select Enter:
+   
    ```powershell
    Get-CimInstance -Class Win32_UserAccount | Format-Table -Property Caption,Domain,SID,FullName,Name
    ```
+   
    Notice the returned list of all domain and local accounts.
 
 ### Task 2: Query BIOS information
 
 1. To find a repository class that contains BIOS information, enter the following command in the **Windows PowerShell** console, and then select Enter:
 
-    ```
+    ```powershell
     Get-CimClass -ClassName *bios*
     ```
 
@@ -137,10 +151,13 @@ lab:
 ### Task 3: Query network adapter configuration information
 
 1. To display a list of all the local `Win32_NetworkAdapterConfiguration` instances, enter the following command in the **Windows PowerShell** console, and then select Enter:
+   
    ```powershell
    Get-CimInstance -Classname Win32_NetworkAdapterConfiguration
    ```
+   
 1. To display a list of all the `Win32_NetworkAdapterConfiguration` instances that exist on **LON-DC1**, enter the following command in the **Windows PowerShell** console, and then select Enter:
+   
    ```powershell
    Get-CimInstance -Classname Win32_NetworkAdapterConfiguration -ComputerName LON-DC1
    ```
@@ -168,9 +185,10 @@ lab:
 ### Task 1: Invoke a CIM method
 
 1. To restart **LON-DC1**, enter the following command in the **Windows PowerShell** console, and then select Enter:
-   ```powershell
-   Invoke-CimMethod -ClassName Win32_OperatingSystem -ComputerName LON-DC1 -MethodName Reboot
-   ```
+   
+    ```powershell
+    Invoke-CimMethod -ClassName Win32_OperatingSystem -ComputerName LON-DC1 -MethodName Reboot
+    ```
    Notice the response that includes **ReturnValue=0** and **PSComputerName=LON-DC1**.
 1. Switch to the **LON-DC1** virtual machine and observe it restarting.
 1. When the restart is complete, switch back to the **LON-CL1** virtual machine.
@@ -178,17 +196,20 @@ lab:
 ### Task 2: Invoke a WMI method
 
 1. To review properties of the WinRM service, enter the following command in the **Windows PowerShell** console, and then select Enter:
+    
     ```powershell
     Get-Service WinRM | FL *
     ```
     Note that the **StartType** is **Manual**.
 1. To change the start mode of the specified service, enter the following command in the **Windows PowerShell** console, and then select Enter:
+    
     ```powershell
     Get-WmiObject -Class Win32_Service -Filter "Name='WinRM'" | Invoke-WmiMethod -Name ChangeStartMode -Argument 'Automatic'
     ```
 1. To verify that the StartType of the WinRM service has changed, enter the following command in the **Windows PowerShell** console, and then select Enter:
-   ```powershell
-   Get-Service WinRM | FL *
-   ```
+   
+    ```powershell
+    Get-Service WinRM | FL *
+    ```
 
    Note that the **StartType** is **Automatic**.
