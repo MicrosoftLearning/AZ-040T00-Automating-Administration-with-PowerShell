@@ -159,7 +159,7 @@ After completing this exercise, you'll have customized the appearance of the Win
    Get-Module *sched* -ListAvailable
    ```
 
-   > **Note:** The first two commands display a list of commands that use *Sched* in their name. The third displays a list of modules with *Sched* in their name, which should lead you to the module **ScheduledTasks**. If you then run the command `Get-Command -Module \*ScheduledTask\*`, you'll get a list of commands in that module. This should lead you to the **Enable-ScheduledTask** command.
+   > **Note:** The first two commands display a list of commands that use *Sched* in their name. The third displays a list of modules with *Sched* in their name, which should lead you to the module **ScheduledTasks**. If you then run the command `Get-Command -Module *ScheduledTask*`, you'll get a list of commands in that module. This should lead you to the **Enable-ScheduledTask** command.
 
 1. In the console, enter one of the following commands, and then select Enter:
 
