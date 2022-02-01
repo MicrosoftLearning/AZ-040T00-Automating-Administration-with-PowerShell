@@ -187,12 +187,6 @@ lab:
 1. In the console, enter the following command, and then select Enter:
 
       ```powershell
-      Test-NetConnection LON-CL1
-      ```
-
-1. In the console, enter the following command, and then select Enter:
-
-      ```powershell
       help *cache* 
       ```
 
