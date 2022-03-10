@@ -291,7 +291,7 @@ lab:
 
 ### Task 1: Connect to Microsoft Teams
 
-1. To install the SharePoint Online Management Shell, in the **Windows PowerShell** console, enter the following command, and then select Enter:
+1. To install the Microsoft Teams PowerShell Module, in the **Windows PowerShell** console, enter the following command, and then select Enter:
 
    ```powershell
    Install-Module MicrosoftTeams
