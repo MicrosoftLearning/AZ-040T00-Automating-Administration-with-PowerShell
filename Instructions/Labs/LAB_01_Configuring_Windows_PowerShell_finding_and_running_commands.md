@@ -21,7 +21,9 @@ After completing this lab, you'll be able to:
 - Find and run Windows PowerShell commands.
 - Use Windows PowerShell Help and About topics to learn new shell concepts and techniques.
 
-## Estimated time: 60 minutes
+## Estimated time
+
+60 minutes
 
 ## Lab Setup
 
@@ -66,7 +68,7 @@ The main tasks for this exercise are:
 
 ### Task 3: Start a shell transcript
 
-1. In the Windows PowerShell console, enter the following command, and then select Enter:
+1. In the Windows PowerShell console, enter the following command, and then press the Enter key:
 
    ```ps
    Start-Transcript C:\DayOne.txt
