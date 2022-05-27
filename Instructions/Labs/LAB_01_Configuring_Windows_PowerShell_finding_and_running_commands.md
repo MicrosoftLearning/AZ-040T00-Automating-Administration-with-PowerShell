@@ -82,7 +82,7 @@ After completing this exercise, you'll have opened and configured the Windows Po
 
 ## Exercise 2: Configuring the Windows PowerShell ISE application
 
-### Exercise Scenario 2
+### Exercise scenario 2
 
 In this exercise, you'll customize the appearance of the Windows PowerShell ISE application.
 
@@ -108,7 +108,7 @@ After completing this exercise, you'll have customized the appearance of the Win
 
 ## Exercise 3: Finding and running Windows PowerShell commands
 
-### Exercise Scenario 3
+### Exercise scenario 3
 
 In this exercise, you'll use Windows PowerShell’s **Get-Help** and **Get-Command** commands to discover new commands that can complete specific tasks within Windows PowerShell. You'll also run several basic Windows PowerShell commands. In some instances, you might have to find the commands that you'll use to complete the task.
 
@@ -155,7 +155,7 @@ After completing this exercise, you'll have demonstrated your ability to find an
 
 ## Exercise 4: Using About files
 
-### Exercise Scenario 4
+### Exercise scenario 4
 
 In this exercise, you'll use help discovery techniques to find content in **About** files, and then use that content to answer questions about global Windows PowerShell functionality.
 
