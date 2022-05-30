@@ -92,8 +92,7 @@ The main tasks for this exercise are as follows:
 
 ### Task 2: Query BIOS information
 
-1. Using the keyword **bios** and a CIM command, find a repository class that contains BIOS information.
-   
+1. Using the keyword **bios** and a CIM command, find a repository class that contains BIOS information. 
 1. Using a CIM command and the class that you discovered in the previous step, display a list of all available BIOS information.
 
 ### Task 3: Query network adapter configuration information
@@ -104,7 +103,6 @@ The main tasks for this exercise are as follows:
 ### Task 4: Query user group information
 
 1. Using a CIM command and the keyword **group**, find a class that lists user groups.
-
 1. Using a CIM command, display a list of the user groups that exist on **LON-DC1**.
 
 ## Exercise 3: Invoking methods
