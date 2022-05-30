@@ -95,7 +95,7 @@ The main tasks for this exercise are:
 
 1. Switch to **LON-SVR1**.
 2. Open **Windows PowerShell** with administrative permissions.
-3. Test the connection to **LON-DC1** and note the speed of the test.
+3. Test the connection to **LON-DC1** and note the time it takes to receive the response.
 4. Review the network configuration for **LON-SVR1**.
 5. Note the IP address, default gateway, and DNS server.
 
@@ -111,7 +111,7 @@ The main tasks for this exercise are:
 ### Task 4: Verify and test the changes
 
 1. On **LON-SVR1**, verify the changes to the network configuration.
-2. Test the connection to **LON-DC1**, and then note the difference in the test speed.
+2. Test the connection to **LON-DC1**, and note the difference in the time it takes to receive the response.
 
 ### Exercise 2 results
 
