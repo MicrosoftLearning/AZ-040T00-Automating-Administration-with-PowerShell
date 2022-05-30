@@ -28,31 +28,31 @@ lab:
 ### Task 2: Digitally sign a script
 
 1. Select the **Start** button, enter **Powersh**, and then select **Windows PowerShell**.
-1. At the Windows PowerShell prompt, enter the following command, and then select Enter:
+1. At the Windows PowerShell prompt, enter the following command, and then press the Enter key:
 
    ```powershell
    Get-ChildItem Cert:\CurrentUser\My\ -CodeSigningCert
    ```
 
-1. At the Windows PowerShell prompt, enter the following command, and then select Enter:
+1. At the Windows PowerShell prompt, enter the following command, and then press the Enter key:
 
    ```powershell
    $cert = Get-ChildItem Cert:\CurrentUser\My\ -CodeSigningCert
    ```
 
-1. At the Windows PowerShell prompt, enter the following command, and then select Enter:
+1. At the Windows PowerShell prompt, enter the following command, and then press the Enter key:
 
    ```powershell
    Set-Location E:\Mod07\Labfiles
    ```
 
-1. At the Windows PowerShell prompt, enter the following command, and then select Enter:
+1. At the Windows PowerShell prompt, enter the following command, and then press the Enter key:
 
    ```powershell
    Rename-Item HelloWorld.txt HelloWorld.ps1
    ```
 
-1. At the Windows PowerShell prompt, enter the following command, and then select Enter:
+1. At the Windows PowerShell prompt, enter the following command, and then press the Enter key:
 
    ```powershell
    Set-AuthenticodeSignature -FilePath HelloWorld.ps1 -Certificate $cert
@@ -60,19 +60,19 @@ lab:
 
 ### Task 3: Set the execution policy
 
-1. At the Windows PowerShell prompt, enter the following command, and then select Enter. Enter **Y** at the prompt and select Enter:
+1. At the Windows PowerShell prompt, enter the following command, and then press the Enter key. Enter **Y** at the prompt and press the Enter key:
 
    ```powershell
    Set-ExecutionPolicy AllSigned
    ```
 
-2. At the Windows PowerShell prompt, enter the following command, and then select Enter. You might be asked if you want to run software from the untrusted publisher. Enter **A** and then select Enter:
+2. At the Windows PowerShell prompt, enter the following command, and then press the Enter key. You might be asked if you want to run software from the untrusted publisher. Enter **A** and then press the Enter key:
 
    ```powershell
    .\HelloWorld.ps1
    ```
 
-3. At the Windows PowerShell prompt, enter the following command, and then select Enter. Enter **Y** at the prompt and select Enter:
+3. At the Windows PowerShell prompt, enter the following command, and then press the Enter key. Enter **Y** at the prompt and press the Enter key:
 
    ```powershell
    Set-ExecutionPolicy Unrestricted
@@ -86,19 +86,19 @@ lab:
 
 1. On **LON-CL1**, select **Start**, enter **Powersh**, and then select **Windows PowerShell**.
 
-1. At the Windows PowerShell prompt, enter the following command, and then select Enter:
+1. At the Windows PowerShell prompt, enter the following command, and then press the Enter key:
 
    ```powershell
    New-ADGroup -Name IPPhoneTest -GroupScope Universal -GroupCategory Security
    ```
 
-1. At the Windows PowerShell prompt, enter the following command, and then select Enter:
+1. At the Windows PowerShell prompt, enter the following command, and then press the Enter key:
 
    ```powershell
    Move-ADObject "CN=IPPhoneTest,CN=Users,DC=Adatum,DC=com" -TargetPath "OU=IT,DC=Adatum,DC=com"
    ```
 
-1. At the Windows PowerShell prompt, enter the following command, and then select Enter:
+1. At the Windows PowerShell prompt, enter the following command, and then press the Enter key:
 
    ```powershell
    Add-ADGroupMember IPPhoneTest -Members Abbi,Ida,Parsa,Tonia
@@ -113,25 +113,25 @@ lab:
 ### Task 1: Create services.txt with service names
 
 1. Select **Start**, enter **powersh**, and then select **Windows PowerShell**.
-1. At the Windows PowerShell prompt, enter the following command, and then select Enter:
+1. At the Windows PowerShell prompt, enter the following command, and then press the Enter key:
 
    ```powershell
    Set-Location E:\Mod07\Labfiles
    ```
 
-1. At the Windows PowerShell prompt, enter the following command, and then select Enter:
+1. At the Windows PowerShell prompt, enter the following command, and then press the Enter key:
 
    ```powershell
    New-Item services.txt -ItemType File
    ```
 
-1. At the Windows PowerShell prompt, enter the following command, and then select Enter:
+1. At the Windows PowerShell prompt, enter the following command, and then press the Enter key:
 
    ```powershell
    Get-Service "Print Spooler" | Select -ExpandProperty Name | Out-File services.txt -Append
    ```
 
-1. At the Windows PowerShell prompt, enter the following command, and then select Enter:
+1. At the Windows PowerShell prompt, enter the following command, and then press the Enter key:
 
    ```powershell
    Get-Service "Windows Time" | Select -ExpandProperty Name | Out-File services.txt -Append
