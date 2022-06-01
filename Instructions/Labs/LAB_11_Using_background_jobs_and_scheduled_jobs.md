@@ -51,7 +51,9 @@ The main tasks for this exercise are:
 1. Ensure that you're signed in to **LON-CL1** as **Adatum\\Administrator** with the password **Pa55w.rd**.
 1. Start a Windows PowerShell remoting job that retrieves a list of physical network adapters from **LON-DC1** and **LON-SVR1**. Name the job **RemoteNetAdapt**.
 1. Start a Windows PowerShell remote job that retrieves a list of Server Message Block (SMB) shares from **LON-DC1** and **LON-SVR1**. Name the job **RemoteShares**.
-1. Start a Windows PowerShell remote job that retrieves all instances of the **Win32_Volume** Common Information Model (CIM) class from every computer in Active Directory Domain Services (AD DS). Name the job **RemoteDisks**. Because some domain computers might not start, some child jobs might fail.
+1. Enable PowerShell Remoting on LON-CL1 and then start a Windows PowerShell remote job that retrieves all instances of the **Win32_Volume** Common Information Model (CIM) class from every computer in Active Directory Domain Services (AD DS). Name the job **RemoteDisks**. Because some domain computers might not start, some child jobs might fail.
+
+> **Note:** You need to enable PowerShell Remoting on LON-CL1 in order to connect to it by using PowerShell Remoting, which is, by default, disabled on Windows 10. The **RemoteDisk** targets all domain computers, including LON-CL1.
 
 ### Task 2: Start a local job
 
@@ -100,7 +102,6 @@ The main tasks for this exercise are:
 
     - The job action retrieves all entries from the **Security** event log.
     - The job name is **LocalSecurityLog**.
-    - The maximum number of job results is five.
 
 1. Display a list of job triggers, including time, for the **LocalSecurityLog** scheduled job.
 1. Wait until the time displayed in step 2 has passed.
@@ -111,15 +112,16 @@ The main tasks for this exercise are:
 
 1. On **LON-DC1**, open **Active Directory Users and Computers**.
 1. Select a user from the **Managers** organizational unit (OU) in **Active Directory Users and Computers**, and then disable the user account.
+1. Verify that the disabled user account is a member of the **Managers** security group.
 1. Open the **Task Scheduler**.
 1. Create a new task with the following properties:
 
-    - Name and description: **Delete Disabled User from Managers Security Group**
-    - Security options: **Run whether user is logged on or not** and **Run with highest privileges**
-    - Trigger settings: **Daily** and set the time to five minutes after the current time
+    - Name and description: Enter **Remove Disabled User from Managers Security Group**
+    - Security options: Enter **Run whether user is logged on or not** and **Run with highest privileges**
+    - Trigger settings: Enter **Daily** and set the time to five minutes after the current time
     - Actions: Set **Program/script** to **PowerShell.exe**
     - Add arguments (optional): Enter **-ExecutionPolicy Bypass E:\\Labfiles\\Mod11\\DeleteDisabledUserManagersGroup.ps1**
     - Settings: Set **If the task is already running, then the following rule applies** to **Stop the existing instance**
 
-1. After five minutes, review the history of the **Delete Disabled User from Managers Security Group** task.
-1. Return to **Active Directory Users and Computers** and verify that the disabled user account from step 2 is no longer a member of the **Managers** security group.
+1. After five minutes, review the history of the **Remove Disabled User from Managers Security Group** task.
+1. Return to **Active Directory Users and Computers** and verify that the user account you disabled is no longer a member of the **Managers** security group.
