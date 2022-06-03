@@ -28,7 +28,7 @@ Username: **Adatum\\Administrator**
 
 Password: **Pa55w.rd**
 
-## Lab Startup
+## Lab startup
 
 1. Select **LON-DC1**.
 1. Sign in by using the following credentials:
@@ -94,7 +94,7 @@ The main tasks for this exercise are:
 ### Task 1: Test the network connection and review the configuration
 
 1. Switch to **LON-SVR1**.
-2. Open **Windows PowerShell** with administrative permissions.
+2. Open Windows PowerShell with administrative permissions.
 3. Test the connection to **LON-DC1** and note the time it takes to receive the response.
 4. Review the network configuration for **LON-SVR1**.
 5. Note the IP address, default gateway, and DNS server.
