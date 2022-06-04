@@ -74,6 +74,8 @@ After completing this exercise, you'll have opened and configured the Windows Po
     a. On the Windows PowerShell ISE toolbar, select the **Show Script Pane Maximized** option.
     
     b. Select the **Hide Script Pane** up-arrow icon to display the console.
+    
+    > **Note:** Alternatively, you can press the **Ctrl+R** key combination.
 
 1. Select the **Show** **Command Add-on** option to review the **Commands** pane, if it isn't showing.
 
