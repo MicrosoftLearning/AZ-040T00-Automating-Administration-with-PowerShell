@@ -12,7 +12,7 @@ lab:
 ### Task 1: Create a new folder on a remote computer
 
 1. On **LON-CL1**, select **Start**, and then enter **powersh**.
-1. from the results list, right-click **Windows PowerShell** or activate its context menu, and then select **Run as administrator**.
+1. From the results list, right-click **Windows PowerShell** or activate its context menu, and then select **Run as administrator**.
 1. To review help for the **New-Item** cmdlet in a separate window, in the **Administrator: Windows PowerShell** console, enter the following command, and then press the Enter key:
 
    ```powershell
@@ -20,7 +20,7 @@ lab:
    ```
 
 1. In the output from **Get-Help**, notice the *–Name* and *–ItemType* parameters, then review the example commands, and close te **New-Item Help** window.
-1. To create a new **ScriptShare** folder in **\\\\Lon-Svr1\\C$\\	**, in the console, enter the following command, and then press the Enter key:
+1. To create a new **ScriptShare** folder in **\\\\Lon-Svr1\\C$\\**, in the console, enter the following command, and then press the Enter key:
 
    ```powershell
    New-Item –Path \\Lon-Svr1\C$\ –Name ScriptShare –ItemType Directory
