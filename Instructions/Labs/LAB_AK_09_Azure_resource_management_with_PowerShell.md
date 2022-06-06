@@ -30,7 +30,7 @@ lab:
 
 1. Select the **Start** menu, and then enter **pwsh**.
 1. In the results list, right-click **PowerShell 7 (x64)** or activate its context menu, and select **Run as administrator**.
-1. In the **Administrator: PowerShell (x64)** window, enter the following command, and then press the Enter key to check your PowerShell version:
+1. In the **Administrator: PowerShell 7 (x64)** window, enter the following command, and then press the Enter key to check your PowerShell version:
 
    ```powershell
    $PSVersionTable.PSVersion
@@ -153,7 +153,7 @@ lab:
 
 1. On the **LON-CL1** computer, switch to the web browser window displaying the Azure portal and navigate to the **Virtual Machines** page.
 1. On the  the **Virtual Machines** page, select the **TestVM1** entry.
-1. On the **Overview** page of the **TestVM1** VM, review its parameters and, in the navigation menu, in the **Settings** section, select **Disk**. 
+1. On the **Overview** page of the **TestVM1** VM, review its parameters and, in the navigation menu, in the **Settings** section, select **Disks**. 
 1. Review the list of disks and verfy that only a single disk is listed (OS disk).
 1. To create a data disk for the existing VM, in the PowerShell 7.1 window, enter the following commands, and press the Enter key after each:
 
