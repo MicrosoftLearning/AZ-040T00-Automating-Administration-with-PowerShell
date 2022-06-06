@@ -68,13 +68,13 @@ The main tasks for this exercise are:
 
 ### Task 3: Start a shell transcript
 
-1. In the Windows PowerShell console, enter the following command, and then press the Enter key:
+1. In the **Windows PowerShell console**, enter the following command, and then press the Enter key:
 
    ```ps
    Start-Transcript C:\DayOne.txt
    ```
 
-> **Note:** You've now started a transcript of your Windows PowerShell session. It'll save all commands that you enter and the command output to a text file until you run **Stop‑Transcript** or close the Windows PowerShell window. You can review the transcript's contents at any time by opening **C:\DayOne.txt**.
+> **Note:** You've now started a transcript of your Windows PowerShell session. It'll save all commands that you enter and the command output to a text file until you run **Stop‑Transcript** or close the **Windows PowerShell** window. You can review the transcript's contents at any time by opening **C:\DayOne.txt**.
 
 ### Exercise 1 results
 
@@ -95,7 +95,7 @@ The main tasks for this exercise are:
 
 1. Right-click the **Windows PowerShell** icon on the taskbar or activate its context menu, and then open the **Windows PowerShell ISE** application as **Administrator**.
 
-### Task 2: Customize the ISE's appearance to use a single-pane view, hide the Command pane, and adjust the font size
+### Task 2: Customize the appearance of the ISE to use the single-pane view, hide the Command pane, and adjust the font size
 
 1. Configure the ISE to use the single-pane view and display the console pane.
 2. Hide the **Command** pane.
