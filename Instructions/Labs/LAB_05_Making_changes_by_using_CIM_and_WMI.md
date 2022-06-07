@@ -20,7 +20,7 @@ After completing this lab, you'll be able to:
 
 ## Estimated time: 45 minutes
 
-## Lab Setup
+## Lab setup
 
 Virtual machines: **AZ-040T00A-LON-DC1** and **AZ-040T00A-LON-CL1**
 
