@@ -125,7 +125,7 @@ The main tasks for this exercise are:
 1. Display a list of all the users in Active Directory in a format that lets you easily compare properties.
 1. Display the same list of all the users in the same format. This time, however, display only those users in the **Users** container of Active Directory. Use a search base of **"cn=Users,dc=adatum,dc=com"** for this task.
 
-### Task 2: Create a report of the Security event log entries that have the event ID 4624
+### Task 2: Create a report displaying the Security event log entries that have the event ID 4624
 
 1. Display only the total number of **Security** event log entries that have the event ID **4624**.
 1. Display the full list of the **Security** event log entries that have the event ID **4624**, and display only the time written, event ID, and message.
