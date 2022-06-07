@@ -145,7 +145,7 @@ The main tasks for this exercise are:
     - Physical path: The folder that you previously created
     - Binding information: The current IP address of **LON-SVR1** using port **8080**
 
-1. Open the website in Internet Explorer by using the IP address and port **8080**, and then verify that the site is using the provided settings. Internet Explorer will display an error message that a document hasn't been configured for the URL. The error message details give the physical path of the site, which should be **C:\\inetpub\\wwwroot\\london**.
+1. Open the website in Internet Explorer by using the IP address and port **8080**, and then verify that the site is using the provided settings. Internet Explorer will display an error message that a document hasn't been configured for the URL. The error message details give the physical path of the site, which should be **C:\\inetpub\\wwwroot\\London**.
 
 ### Exercise 3 results
 
