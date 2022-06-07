@@ -79,7 +79,7 @@ After completing this exercise, you'll have opened and configured the Windows Po
 
 1. Select the **Show** **Command Add-on** option to review the **Commands** pane, if it isn't showing.
 
-1. Select the **Show-Command Add-on** option to hide the **Commands** pane.
+1. Select the **Show Command Add-on** option to hide the **Commands** pane.
 
 1. Use the slider in the lower-right corner of the window to adjust the font size until you can review it comfortably.
 
@@ -91,7 +91,7 @@ After completing this exercise, you'll have customized the appearance of the Win
 
 ## Exercise 3: Finding and running Windows PowerShell commands
 
-### Task 1: Find commands that will accomplish specified tasks
+### Task 1: Find commands that'll accomplish specified tasks
 
 1. On **LON-CL1**, on the task bar, right‑click **Windows PowerShell**, and then select **Run as Administrator**.
 
@@ -329,7 +329,7 @@ After completing this exercise, you'll have demonstrated your ability to find an
    Get-Help about_comparison_operators -ShowWindow
    ```
 
-   Notice the **–Like** operator in the **about_Comparison_Operators** help, which displays in a modal window.
+   Notice the **–Like** operator in the **about_Comparison_Operators** Help, which displays in a modal window.
 
 1. To find the **-Like** operator, in the **Find** text box, enter **wildcard**, and then select **Next**.
 
@@ -355,8 +355,8 @@ After completing this exercise, you'll have demonstrated your ability to find an
    Get-Help about_signing 
    ```
 
-1. Learn about code signing. You should learn that **makecert.exe** is used to create a self-signed digital certificate.
+1. Learn about code signing. You should learn that **MakeCert.exe** is used to create a self-signed digital certificate.
 
 ### Exercise 4 results
 
-After completing this exercise, you'll have demonstrated your ability to locate help content in About files.
+After completing this exercise, you'll have demonstrated your ability to locate help content in **About** files.
