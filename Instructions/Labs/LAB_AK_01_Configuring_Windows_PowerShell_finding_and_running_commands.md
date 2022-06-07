@@ -5,7 +5,7 @@ lab:
     module: 'Module 1: Getting Started with Windows PowerShell'
 ---
 
-# Lab: Configuring Windows PowerShell, and finding and running commands
+# Lab answer key: Configuring Windows PowerShell, and finding and running commands
 
 ## Exercise 1: Configuring the Windows PowerShell console application
 
@@ -67,7 +67,7 @@ After completing this exercise, you'll have opened and configured the Windows Po
 
 1. Right-click the **Windows PowerShell** icon on the taskbar or activate its context menu, and then select **Run ISE as Administrator**. You should now be running Windows PowerShell ISE as **Administrator**.
 
-### Task 2: Customize the appearance of the ISE to use the single-pane view, hide the Command pane, and adjust the font size
+### Task 2: Customize the ISE's appearance to use a single-pane view, hide the Command pane, and adjust the font size
 
 1. To configure the ISE to use a single-pane view:
 
