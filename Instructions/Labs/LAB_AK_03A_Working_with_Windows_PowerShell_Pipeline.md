@@ -5,7 +5,7 @@ lab:
     module: 'Module 3: Working with the Windows PowerShell pipeline'
 ---
 
-# Lab: Using PowerShell pipeline
+# Lab answer key: Using PowerShell pipeline
 
 ## Exercise 1: Selecting, sorting, and displaying data
 
@@ -250,7 +250,7 @@ After completing this exercise, you should have produced several custom reports 
    Get-ADUser –Filter * -SearchBase "cn=Users,dc=Adatum,dc=com" | ft
    ```
 
-### Task 2: Create a report of the Security event log entries that have the event ID 4624
+### Task 2: Create a report displaying the Security event log entries that have the event ID 4624
 
 1. In the **Administrator: Windows PowerShell** window, enter the following command, and then press the Enter key:
 
@@ -259,7 +259,7 @@ After completing this exercise, you should have produced several custom reports 
    Where EventID -eq 4624 | Measure-Object | fw
    ```
 
-1. In the console, enter the following command and press the Enter key:
+1. In the console, enter the following command and then press the Enter key:
 
    ```powershell
    Get-EventLog -LogName Security | 
