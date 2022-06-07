@@ -25,7 +25,7 @@ After completing this lab, you'll be able to:
 
 60 minutes
 
-## Lab Setup
+## Lab setup
 
 Virtual machines: **AZ-040T00A-LON-DC1** and **AZ-040T00A-LON-CL1**
 
@@ -33,7 +33,7 @@ User name: **Adatum\\Administrator**
 
 Password: **Pa55w.rd**
 
-## Lab Startup
+## Lab startup
 
 1. Select  **LON-DC1**.
 1. Sign in by using the following credentials:
@@ -89,7 +89,7 @@ In this exercise, you'll customize the appearance of the Windows PowerShell ISE 
 The main tasks for this exercise are:
 
 1. Open the Windows PowerShell ISE application as Administrator.
-1. Customize the appearance of the ISE to use the single-pane view, hide the **Command** pane, and adjust the font size.
+1. Customize the ISE's appearance to use a single-pane view, hide the **Command** pane, and adjust the font size.
 
 ### Task 1: Open the Windows PowerShell ISE application as Administrator
 
