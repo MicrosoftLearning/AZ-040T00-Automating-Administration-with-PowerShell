@@ -137,7 +137,7 @@ lab:
    $mktgUsers | Set-ADUser -Department "Business Development"
    ```
 
-1. Review the **Name** and **Department** of users in the `$mktgUsers` variable, enter the following command, and then press the Enter key:
+1. To review the **Name** and **Department** of users in the `$mktgUsers` variable, enter the following command, and then press the Enter key:
 
    ```powershell
    $mktgUsers | Format-Table Name,Department
@@ -233,7 +233,7 @@ lab:
    $mailList.Remove("Frank")
    ```
 
-1. To review the contents of the $mailList hash table, enter the following command, and then press the Enter key:
+1. To review the contents of the `$mailList` hash table, enter the following command, and then press the Enter key:
 
    ```powershell
    $mailList
