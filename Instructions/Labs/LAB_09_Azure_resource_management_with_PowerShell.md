@@ -149,7 +149,7 @@ The main tasks for this exercise are as follows:
 ### Task 3: Delete the Azure resources
 
 1. On the **LON-CL1** computer, switch back to the PowerShell window.
-1. In the PowerShell console, delete the resource group you and all of its resources that you created earlier in this lab by running the following command:
+1. In the PowerShell console, delete the resource group and all of its resources that you created earlier in this lab by running the following command:
 
     ```powershell
     Remove-AzResourceGroup -Name $rgName -Force
