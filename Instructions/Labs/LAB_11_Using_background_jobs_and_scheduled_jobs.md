@@ -58,7 +58,7 @@ The main tasks for this exercise are:
 ### Task 2: Start a local job
 
 1. Start a local job that retrieves all entries from the **Security** event log. Name the job **LocalSecurity**.
-1. Using the range operator (**..**) and **ForEach-Object**, start a local job that produces 100 directory listings of drive C, including subfolders. Name the job **LocalDir**. Proceed to the next task while this job is still running.
+1. Using the range operator (**..**) and **ForEach-Object**, start a local job that produces 100 directory listings of drive **C**, including subfolders. Name the job **LocalDir**. Proceed to the next task while this job is still running.
 
 ### Task 3: Review and manage job status
 
