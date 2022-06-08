@@ -30,7 +30,7 @@ lab:
 
 1. Select the **Start** menu, and then enter **pwsh**.
 1. In the results list, right-click **PowerShell 7 (x64)** or activate its context menu, and select **Run as administrator**.
-1. In the **Administrator: PowerShell (x64)** window, enter the following command, and then press the Enter key to check your PowerShell version:
+1. In the **Administrator: PowerShell 7 (x64)** window, enter the following command, and then press the Enter key to check your PowerShell version:
 
    ```powershell
    $PSVersionTable.PSVersion
@@ -68,14 +68,14 @@ lab:
 1. On the Microsoft Azure portal homepage, select the **Cloud Shell** icon.
 1. In the **Welcome to Azure Cloud Shell** window, select **PowerShell**.
 1. On the **You have no storage mounted** page, review the note about the missing storage account that's needed for Cloud Shell to run. Verify that in the **Subscription** field, your subscription is selected, and then select **Create storage**. Wait until the storage account is created.
-1. When your storage account is created, the Cloud Shell console should open, and you should get a prompt in the format **PS /home/yourname>**.
+1. When your storage account is created, the **Cloud Shell** console should open, and you should get a prompt in the format **PS /home/yourname>**.
 1. At the PowerShell prompt, enter **Get-AzSubscription**, and then press the Enter key to review your subscriptions.
 1. Enter **Get-AzResourceGroup** to review the resource group information.
 1. Use the drop-down list to switch from PowerShell to the **Bash** shell and confirm your choice.
 1. At the Bash shell prompt, enter **az account list**, and then press the Enter key to review the information about your subscription. Also, try tab completion.
 1. Enter **az resource list** to review the resource group information.
 1. Switch back to the PowerShell interface.
-1. In the PowerShell console, enter the following command, and then press the Enter key to create a new resource group (replace the `<yourname>` placeholder with your first name):
+1. In the **PowerShell** console, enter the following command, and then press the Enter key to create a new resource group (replace the `<yourname>` placeholder with your first name):
 
     ```powershell
     New-AzResourceGroup -Name <yourname>M9 -Location westeurope
@@ -93,7 +93,7 @@ lab:
    $cred = Get-Credential -Message "Enter an admin username and password for the operating system"
    ```
 
-1. When prompted, enter an arbitrary username and password that you want to use as admin credentials for the new VM. Do not use **Admin** or **Administrator** as the username and choose a complex, at least 8 character-long password that includes lower case letters, upper case letters, digits, and at least one special character.
+1. When prompted, enter an arbitrary username and password that you want to use as admin credentials for the new VM. Do not use **Admin** or **Administrator** as the username. Choose a complex, at least 8 character-long password that includes lower case letters, upper case letters, digits, and at least one special character.
 1. In the PowerShell 7.1 window, enter the following command to define the VM parameters, and then press the Enter key (replace the `<resource-group-name>` placeholder with the name of the resource group you created in the previous exercise):
 
    ```powershell
@@ -152,9 +152,9 @@ lab:
 ### Task 2: Add a disk to the Azure VM by using PowerShell
 
 1. On the **LON-CL1** computer, switch to the web browser window displaying the Azure portal and navigate to the **Virtual Machines** page.
-1. On the  the **Virtual Machines** page, select the **TestVM1** entry.
-1. On the **Overview** page of the **TestVM1** VM, review its parameters and, in the navigation menu, in the **Settings** section, select **Disk**. 
-1. Review the list of disks and verfy that only a single disk is listed (OS disk).
+1. On the **Virtual Machines** page, select the **TestVM1** entry.
+1. On the **Overview** page of the **TestVM1** VM, review its parameters and, in the navigation menu, in the **Settings** section, select **Disks**. 
+1. Review the list of disks and verify that only a single disk is listed (OS disk).
 1. To create a data disk for the existing VM, in the PowerShell 7.1 window, enter the following commands, and press the Enter key after each:
 
    ```powershell
@@ -165,12 +165,12 @@ lab:
    Update-AzVM -ResourceGroupName "yournameM9" -VM $VirtualMachine
    ```
 
-1. Switch to the Azure portal and refresh the **TestVM1 \| Disks** page. Verify that the listng of disks includes a new disk called **disk1** in the **Data disks** section.
+1. Switch to the Azure portal and refresh the **TestVM1 \| Disks** page. Verify that the listing of disks includes a new disk called **disk1** in the **Data disks** section.
 
 ### Task 3: Delete the Azure resources
 
-1. On the **LON-CL1** computer, switch back to the PowerShell window.
-1. In the PowerShell console, enter the following command, and then press the Enter key to delete the resource group you and all of its resources, which you created earlier in this lab:
+1. On the **LON-CL1** computer, switch back to the **PowerShell** window.
+1. In the **PowerShell** console, enter the following command, and then press the Enter key to delete the resource group and all of its resources, which you created earlier in this lab:
 
     ```powershell
     Remove-AzResourceGroup -Name $rgName -Force
