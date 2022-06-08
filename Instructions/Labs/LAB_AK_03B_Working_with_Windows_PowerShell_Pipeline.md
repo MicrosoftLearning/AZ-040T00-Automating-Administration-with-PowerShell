@@ -67,7 +67,7 @@ lab:
 
 ### Task 3: Run a method of a Windows Management Instrumentation (WMI) object
 
-1. Close all applications other than the **Windows PowerShell console**.
+1. Close all applications other than the **Windows PowerShell** console.
 1. In the console, enter the following command, and then press the Enter key:
 
    ```powershell
