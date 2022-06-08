@@ -24,7 +24,7 @@ lab:
    New-ADOrganizationalUnit -Name London
    ```
 
-### Task 2: Create group for branch office administrators
+### Task 2: Create a group for branch office administrators
 
 - In the Windows PowerShell console, enter the following command, and then press the Enter key:
 
@@ -181,14 +181,14 @@ After completing this exercise, you'll have successfully identified and used Win
 1. On **LON-SVR1**, in the **Administrator: Windows PowerShell** window, enter the following command, and then press the Enter key:
 
    ```powershell
-   New-IISSite London -PhysicalPath C:\inetpub\wwwroot\london -BindingInformation "172.16.0.15:8080:"
+   New-IISSite London -PhysicalPath C:\inetpub\wwwroot\London -BindingInformation "172.16.0.15:8080:"
    ```
 
 2. On the taskbar, select the **Internet Explorer** icon.
 
 3. In the Address bar, enter `http://172.16.0.15:8080`, and then press the Enter key.
 
-> **Note:** Internet Explorer displays an error message that the web server is configured to not list the contents of this directory. The error message details give the physical path of the site, which should be **C:\\inetpub\\wwwroot\\london**.
+> **Note:** Internet Explorer displays an error message that the web server is configured to not list the contents of this directory. The error message details give the physical path of the site, which should be **C:\\inetpub\\wwwroot\\London**.
 
 ### Exercise 3 results
 
