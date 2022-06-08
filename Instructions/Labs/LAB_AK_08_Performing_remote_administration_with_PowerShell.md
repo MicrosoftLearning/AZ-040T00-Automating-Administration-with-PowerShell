@@ -51,7 +51,7 @@ lab:
 
 ## Exercise 2: Performing one-to-one remoting
 
-### Task 1: Connect to the remote computer and install an operating system feature
+### Task 1: Connect to the remote computer and install an operating system feature on it
 
 1. Ensure that you're still signed in to the **LON-CL1** virtual machine as **Adatum\\Administrator** with the password **Pa55w.rd**.
 1. On **LON-CL1**, to establish a one-to-one connection to **LON-DC1**, enter the following command in Windows PowerShell, and then press the Enter key:
