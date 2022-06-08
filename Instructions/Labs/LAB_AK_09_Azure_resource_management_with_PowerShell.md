@@ -144,7 +144,7 @@ lab:
 1. Enter the following command, and then press the Enter key to connect to the VM by using Remote Desktop:
 
    ```powershell
-   mstsc.exe /v $publicIp
+   mstsc.exe /v $publicIp.IpAddress
    ```
 
 1. When prompted, sign in with the admin credentials you provided during the Azure VM provisioning. Ensure that you're connected to the Windows Server 2019 VM and then shut down the operating system. This will automatically terminate your Remote Desktop session.
