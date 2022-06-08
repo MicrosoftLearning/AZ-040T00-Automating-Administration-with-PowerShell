@@ -85,7 +85,7 @@ In this exercise, you'll create commands that query Active Directory users and m
 The main tasks for this exercise are:
 
 1. Update Active Directory user information.
-1. Generate files listing the Active Directory users in the IT department
+1. Generate files listing the Active Directory users in the IT department.
 
 ### Task 1: Update Active Directory user information
 
