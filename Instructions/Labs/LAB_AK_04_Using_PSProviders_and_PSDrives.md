@@ -90,7 +90,7 @@ lab:
    New-Item –Path HKCU:\Software –Name Scripts
    ```
 
-### Task 2: Create a new registry setting to store the name of the PSDrive
+### Task 2: Create a new registry value to store the name of the PSDrive
 
 1. To change location to **HKCU:\Software\Scripts**, enter the following command, and then press the Enter key:
 
