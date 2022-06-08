@@ -5,7 +5,7 @@ lab:
     module: 'Module 5: Querying management information by using CIM and WMI'
 ---
 
-# Lab: Querying information by using WMI and CIM
+# Lab answer key: Querying information by using WMI and CIM
 
 ## Exercise 1: Querying information by using WMI
 
@@ -104,7 +104,7 @@ lab:
    
 1. Leave the **Windows PowerShell** console open for the next exercise.
 
-# Exercise 2: Querying information by using CIM
+## Exercise 2: Querying information by using CIM
 
 ### Task 1: Query user accounts
 
