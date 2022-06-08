@@ -9,7 +9,7 @@ lab:
 
 ## Exercise 1: Signing a script
 
-### Task 1: Create a code signing certificate
+### Task 1: Install a code signing certificate
 
 1. On **LON-CL1**, select **Start**, enter **mmc.exe**, and then select **mmc.exe**.
 1. In the **MMC** console, select **File**, and then select **Add/Remove Snap-in**.
