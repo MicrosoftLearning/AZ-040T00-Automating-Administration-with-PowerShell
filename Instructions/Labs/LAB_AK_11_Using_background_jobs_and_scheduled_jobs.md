@@ -157,7 +157,7 @@ lab:
 
 1. In the **Actions** tab, select **New**.
 1. In the **New Action** window, in the **Program/script** box, enter **PowerShell.exe**.
-1. In the **Add arguments (optional)** box, enter **-ExecutionPolicy Bypass E:\\Labfiles\\\Mod11\\DeleteDisabledUserManagersGroup.ps1**, select **OK** and then, in a pop up window, select **Yes**.
+1. In the **Add arguments (optional)** box, enter **-ExecutionPolicy Bypass E:\\Labfiles\\\Mod11\\DeleteDisabledUserManagersGroup.ps1**, select **OK** and then, in a pop-up window, select **Yes**.
 1. In the **Conditions** tab, review the items, but make no changes.
 1. In the **Settings** tab, in the **If the task is already running, then the following rule applies:** drop-down list, select **Stop the existing instance**, and then select **OK**.
 1. In the **Task Scheduler** credentials pop-up window, in the **Password** box, enter **Pa55w.rd**, and then select **OK**.
