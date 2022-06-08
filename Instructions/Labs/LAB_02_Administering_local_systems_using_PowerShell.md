@@ -16,7 +16,7 @@ After completing this lab, you'll be able to:
 
 - Create and manage Active Directory objects by using Windows PowerShell.
 - Configure network settings on Windows Server by using Windows PowerShell.
-- Create an IIS website by using Windows PowerShell.
+- Create an Internet Information Services (IIS) website by using Windows PowerShell.
 
 ## Estimated time: 60 minutes
 
