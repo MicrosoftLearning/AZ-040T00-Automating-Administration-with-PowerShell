@@ -12,7 +12,7 @@ lab:
 ### Task 1: Create a new folder on a remote computer
 
 1. On **LON-CL1**, select **Start**, and then enter **powersh**.
-1. from the results list, right-click **Windows PowerShell** or activate its context menu, and then select **Run as administrator**.
+1. From the results list, right-click **Windows PowerShell** or activate its context menu, and then select **Run as administrator**.
 1. To review help for the **New-Item** cmdlet in a separate window, in the **Administrator: Windows PowerShell** console, enter the following command, and then press the Enter key:
 
    ```powershell
