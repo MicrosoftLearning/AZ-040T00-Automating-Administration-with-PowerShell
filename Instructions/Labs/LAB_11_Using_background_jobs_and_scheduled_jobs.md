@@ -42,11 +42,11 @@ In this exercise, you'll start jobs using two of the basic job types.
 
 The main tasks for this exercise are:
 
-1. Start a Windows PowerShell job.
+1. Start a Windows PowerShell remote job.
 1. Start a local job.
 1. Review and manage job status.
 
-### Task 1: Start a Windows PowerShell job
+### Task 1: Start a Windows PowerShell remote job
 
 1. Ensure that you're signed in to **LON-CL1** as **Adatum\\Administrator** with the password **Pa55w.rd**.
 1. Start a Windows PowerShell remoting job that retrieves a list of physical network adapters from **LON-DC1** and **LON-SVR1**. Name the job **RemoteNetAdapt**.
