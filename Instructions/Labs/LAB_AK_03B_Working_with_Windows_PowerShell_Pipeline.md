@@ -159,7 +159,7 @@ After completing this exercise, you should have created commands that manipulate
    Export-Clixml E:\UserReport.xml
    ```
 
-1. Review the reprt displayed on the web browser page and then close the web browser window. 
+1. Review the report displayed on the web browser page and then close the web browser window. 
 1. In the console, enter the following command, and then press the Enter key:
 
    ```powershell
