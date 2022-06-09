@@ -329,7 +329,7 @@ After completing this exercise, you'll have demonstrated your ability to find an
    Get-Help about_comparison_operators -ShowWindow
    ```
 
-   Notice the **–Like** operator in the **about_Comparison_Operators** Help, which displays in a modal window.
+   Notice the **–Like** operator in the **about_Comparison_Operators Help**, which displays in a modal window.
 
 1. To find the **-Like** operator, in the **Find** text box, enter **wildcard**, and then select **Next**.
 
