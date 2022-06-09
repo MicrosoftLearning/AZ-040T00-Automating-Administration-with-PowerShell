@@ -29,7 +29,7 @@ lab:
 1. To start a Windows PowerShell remote job that retrieves all instances of the **Win32_Volume** class from every computer in Active Directory Domain Services (AD DS), enter the following commands, and then press the Enter key after each:
 
    ```powershell
-   Enable-PSRemoting
+   Enable-PSRemoting –SkipNetworkProfileCheck –Force
    Invoke-Command –ScriptBlock { Get-CimInstance –ClassName Win32_Volume } –ComputerName (Get-ADComputer –Filter * | Select –Expand Name) –AsJob –JobName RemoteDisks
    ```
 
