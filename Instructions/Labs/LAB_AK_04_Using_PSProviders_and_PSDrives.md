@@ -19,7 +19,7 @@ lab:
    Get-Help New-Item –ShowWindow
    ```
 
-1. In the output from **Get-Help**, notice the *–Name* and *–ItemType* parameters, then review the example commands, and close te **New-Item Help** window.
+1. In the output from **Get-Help**, notice the *–Name* and *–ItemType* parameters, then review the example commands, and close the **New-Item Help** window.
 1. To create a new **ScriptShare** folder in **\\\\Lon-Svr1\\C$\\**, in the console, enter the following command, and then press the Enter key:
 
    ```powershell
