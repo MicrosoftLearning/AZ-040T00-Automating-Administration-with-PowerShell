@@ -52,7 +52,7 @@ In the next step, replace `<password>` with the password you decided to use.
 1. To create a new Azure AD user, enter the following commands, and then press the Enter key:
 
    ```powershell
-   $verifiedDomain = (Get-AzureADTenantDetail).VerifiedDomians[0].Name
+   $verifiedDomain = (Get-AzureADTenantDetail).VerifiedDomains[0].Name
    New-AzureADUser -DisplayName "Noreen Riggs" -UserPrincipalName Noreen@$verifiedDomain -AccountEnabled $true -PasswordProfile $PasswordProfile -MailNickName Noreen
    ```
 
