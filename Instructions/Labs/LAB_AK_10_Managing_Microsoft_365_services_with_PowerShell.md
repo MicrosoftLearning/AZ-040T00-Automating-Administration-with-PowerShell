@@ -265,7 +265,7 @@ In the next step, replace `<password>` with the password you decided to use.
 1. To create a new site, enter the following command, and then press the Enter key:
 
    ```powershell
-   New-SPOSite -Url https://$verifiedDomanShort.sharepoint.com/sites/Sales -Owner noreen@$verifiedDoman -StorageQuota 256 -Template EHS#1 -NoWait
+   New-SPOSite -Url https://$verifiedDomainShort.sharepoint.com/sites/Sales -Owner noreen@$verifiedDomain -StorageQuota 256 -Template EHS#1 -NoWait
    ```
 
    > **Note:** Creating the site can take 10 minutes or longer. The **-NoWait** parameter performs this task asynchronously, so you don't need to wait for its completion. If you intend to wait, you can verify the status of the SharePoint site by entering the following command, and then pressing the Enter key:
@@ -327,7 +327,7 @@ In the next step, replace `<password>` with the password you decided to use.
 1. To add a user to the team, enter the following command, and then press the Enter key:
 
    ```powershell
-   Add-TeamUser -GroupId $team.GroupId -User Allan@$verifiedDoman -Role Member
+   Add-TeamUser -GroupId $team.GroupId -User Allan@$verifiedDomain -Role Member
    ```
 
 1. To review the team users, enter the following command, and then press the Enter key:
