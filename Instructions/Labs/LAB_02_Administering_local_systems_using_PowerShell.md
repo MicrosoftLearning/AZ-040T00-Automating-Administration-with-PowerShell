@@ -16,7 +16,7 @@ After completing this lab, you'll be able to:
 
 - Create and manage Active Directory objects by using Windows PowerShell.
 - Configure network settings on Windows Server by using Windows PowerShell.
-- Create an IIS website by using Windows PowerShell.
+- Create an Internet Information Services (IIS) website by using Windows PowerShell.
 
 ## Estimated time: 60 minutes
 
@@ -28,7 +28,7 @@ Username: **Adatum\\Administrator**
 
 Password: **Pa55w.rd**
 
-## Lab Startup
+## Lab startup
 
 1. Select **LON-DC1**.
 1. Sign in by using the following credentials:
@@ -94,8 +94,8 @@ The main tasks for this exercise are:
 ### Task 1: Test the network connection and review the configuration
 
 1. Switch to **LON-SVR1**.
-2. Open **Windows PowerShell** with administrative permissions.
-3. Test the connection to **LON-DC1** and note the speed of the test.
+2. Open Windows PowerShell with administrative permissions.
+3. Test the connection to **LON-DC1** and note the time it takes to receive the response.
 4. Review the network configuration for **LON-SVR1**.
 5. Note the IP address, default gateway, and DNS server.
 
@@ -111,7 +111,7 @@ The main tasks for this exercise are:
 ### Task 4: Verify and test the changes
 
 1. On **LON-SVR1**, verify the changes to the network configuration.
-2. Test the connection to **LON-DC1**, and then note the difference in the test speed.
+2. Test the connection to **LON-DC1**, and note the difference in the time it takes to receive the response.
 
 ### Exercise 2 results
 
@@ -145,7 +145,7 @@ The main tasks for this exercise are:
     - Physical path: The folder that you previously created
     - Binding information: The current IP address of **LON-SVR1** using port **8080**
 
-1. Open the website in Internet Explorer by using the IP address and port **8080**, and then verify that the site is using the provided settings. Internet Explorer will display an error message that a document hasn't been configured for the URL. The error message details give the physical path of the site, which should be **C:\\inetpub\\wwwroot\\london**.
+1. Open the website in Internet Explorer by using the IP address and port **8080**, and then verify that the site is using the provided settings. Internet Explorer will display an error message that a document hasn't been configured for the URL. The error message details give the physical path of the site, which should be **C:\\inetpub\\wwwroot\\London**.
 
 ### Exercise 3 results
 

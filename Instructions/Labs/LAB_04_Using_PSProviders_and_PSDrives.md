@@ -20,7 +20,7 @@ After completing this lab, you'll be able to:
 
 ## Estimated time: 30 minutes
 
-## Lab Setup
+## Lab setup
 
 Virtual machines:
 
@@ -83,7 +83,7 @@ The main tasks for this exercise are as follows:
 1. In the **Windows PowerShell** console, enter a command to verify that the registry key **HKEY_CURRENT_USER\Software** does not have a subkey named **Scripts**.
 1. In the console, run a command to create a registry key named **Scripts** in **HKEY_CURRENT_USER\Software**.
 
-### Task 2: Create a new registry setting to store the name of the PSDrive
+### Task 2: Create a new registry value to store the name of the PSDrive
 
 1. In the **Windows PowerShell** console, run a command to set the current working location to the path of the registry key that you created.
 1. Create a registry value to store the PSDrive name with the following configuration:
