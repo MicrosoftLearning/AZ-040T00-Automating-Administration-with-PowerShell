@@ -24,7 +24,7 @@ lab:
    New-ADOrganizationalUnit -Name London
    ```
 
-### Task 2: Create group for branch office administrators
+### Task 2: Create a group for branch office administrators
 
 - In the Windows PowerShell console, enter the following command, and then press the Enter key:
 
@@ -88,7 +88,7 @@ After completing this exercise, you'll have successfully identified and used com
    Test-Connection LON-DC1
    ```
 
-> **Note:** Note the speed of the connection so that you can compare it to the speed after you make changes.
+> **Note:** The test results should be returned without any noticeable delay. You will compare this response time the one after you make changes to the network configuration in this exercise.
 
 1. In the console, enter the following command, and then press the Enter key:
 
@@ -150,7 +150,7 @@ After completing this exercise, you'll have successfully identified and used com
    Test-Connection LON-DC1
    ```
 
-> **Note:** It now takes much longer to receive a response from **LON-DC1**. Note that the actual time it takes might vary. While the change should be large enough to be noticeable, it's possible you won't notice much difference.
+> **Note:** Following the change, it should take longer to receive a response from **LON-DC1**. The actual delay might vary. While the change should be large enough to be noticeable, it's possible you won't notice much difference.
 
 ### Exercise 2 results
 
@@ -166,7 +166,7 @@ After completing this exercise, you'll have successfully identified and used Win
    Install-WindowsFeature Web-Server
    ```
 
-> **Note:** Wait for Internet Information Services (IIS) to install.
+> **Note:** Wait for Internet Information Services (IIS) to install. This should take about 2 minutes.
 
 ### Task 2: Create a folder on the server for the website files
 
@@ -181,14 +181,14 @@ After completing this exercise, you'll have successfully identified and used Win
 1. On **LON-SVR1**, in the **Administrator: Windows PowerShell** window, enter the following command, and then press the Enter key:
 
    ```powershell
-   New-IISSite London -PhysicalPath C:\inetpub\wwwroot\london -BindingInformation "172.16.0.15:8080:"
+   New-IISSite London -PhysicalPath C:\inetpub\wwwroot\London -BindingInformation "172.16.0.15:8080:"
    ```
 
 2. On the taskbar, select the **Internet Explorer** icon.
 
 3. In the Address bar, enter `http://172.16.0.15:8080`, and then press the Enter key.
 
-> **Note:** Internet Explorer displays an error message that the web server is configured to not list the contents of this directory. The error message details give the physical path of the site, which should be **C:\\inetpub\\wwwroot\\london**.
+> **Note:** Internet Explorer displays an error message that the web server is configured to not list the contents of this directory. The error message details give the physical path of the site, which should be **C:\\inetpub\\wwwroot\\London**.
 
 ### Exercise 3 results
 
