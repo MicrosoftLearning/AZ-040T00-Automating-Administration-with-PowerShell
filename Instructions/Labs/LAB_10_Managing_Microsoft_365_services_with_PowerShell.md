@@ -52,26 +52,27 @@ The main tasks for this exercise are:
 
 1. On **LON-CL1**, open Windows PowerShell as an administrator.
 1. Install the module that allows you to manage Azure AD.
-1. Connect to Azure AD and sign in as your admin user.
+1. Connect to Azure AD and sign in using your admin user account.
 1. To verify that you're connected, review a list of users in Azure AD.
 
 ### Task 2: Create a new administrative user
 
 1. Create a new **PasswordProfile** object in a variable, and then populate the **password** property.
 1. Note the password so that you don't forget it.
-1. Create a new user using the **PasswordProfile** object with the following attributes:
+1. Identify the name of your verified Azure AD domain and store it in a variable named $verifiedDomain.
+1. Create a new user object using the **PasswordProfile** object with the following attributes:
    - Display name: **Noreen Riggs**
-   - User principal name: **Noreen@yourdomain.onmicrosoft.com**
+   - User principal name: **Noreen@$verifiedDomain**
    - Account enabled
    - MailNickName: **Noreen**
-1. Add **Noreen Riggs** to the Global Administrator role.
-1. Use the **Get-AzureADDirectoryRoleMember** cmdlet to verify that **Noreen Riggs** is in the Global Administrator role.
+1. Assign the Global Administrator role to the **Noreen Riggs** user account.
+1. Use the **Get-AzureADDirectoryRoleMember** cmdlet to verify that the Global Administrator role was assigned to the **Noreen Riggs** user account.
 
 ### Task 3: Create and license a new user
 
-1. Create a new user by using the **PasswordProfile** object with the following attributes:
+1. Create a new user object by using the **PasswordProfile** object with the following attributes:
    - Display name: **Allan Yoo**
-   - User principal name: **Allan@yourdomain.onmicrosoft.com**
+   - User principal name: **Allan@$verifiedDomain**
    - Account enabled
    - MailNickName: **Allan**
 1. Set the usage location for Allan Yoo to **US**.
@@ -83,13 +84,14 @@ The main tasks for this exercise are:
 ### Task 4: Create and populate a group
 
 1. List the groups in Azure AD.
-2. Create a new group in Azure AD with the following attributes:
+1. Create a new group object in Azure AD with the following attributes:
    - Display name: **Sales Security Group**
    - Security enabled: `$true`
    - Mail enabled: `$false`
    - Mail nickname: **SalesSecurityGroup**
-3. Add Allan Yoo as a member of Sales Security Group.
-4. Query the Sales Security Group membership to verify that Allan Yoo is a member.
+1. Add Allan Yoo's user object as a member of Sales Security Group.
+1. Query the Sales Security Group membership to verify that Allan Yoo's user object is its member.
+1. Keep the **Windows PowerShell** window open.
 
 ## Exercise 2: Managing Exchange Online
 
@@ -105,9 +107,8 @@ The main tasks for this exercise are:
 
 ### Task 1: Connect to Exchange Online
 
-1. On **LON-CL1**, open Windows PowerShell as an administrator.
-1. Install the module that allows you to manage Exchange Online.
-1. Connect to Exchange Online and sign in as your admin user.
+1. On **LON-CL1**, in the same **Windows PowerShell** window, install the module that allows you to manage Exchange Online.
+1. Connect to Exchange Online and sign in using your admin user account.
 1. To verify that you're connected, review a list of mailboxes in Exchange Online.
 
 ### Task 2: Create a room mailbox
@@ -117,8 +118,8 @@ The main tasks for this exercise are:
 
 ### Task 3: Verify room resource booking
 
-1. Open the Microsoft Edge browser and go to **https://outlook.office.com**.
-2. Sign in as **Allan Woo**.
+1. Open the Microsoft Edge browser and navigate to **https://outlook.office.com**.
+2. Sign in as **Allan Yoo**.
 3. From the Calendar, create a new event and include **BoardRoom** as an attendee.
 4. Select an available time and send the meeting invite.
 5. In the Outlook Inbox, verify that you received a response that the meeting request was accepted.
@@ -134,8 +135,7 @@ The main tasks for this exercise are:
 
 ### Task 1: Connect to SharePoint Online
 
-1. To clear cached credentials, close the **Windows PowerShell** console and then open Windows PowerShell as an administrator.
-1. In the **Windows PowerShell** console, install the module that enables you to manage SharePoint Online.
+1. On **LON-CL1**, in the same **Windows PowerShell** window, install the module that enables you to manage SharePoint Online.
 1. Connect to SharePoint Online, and then sign in as **Noreen Riggs**.
 1. To verify your connection, list the sites in your tenant.
 
@@ -149,13 +149,11 @@ The main tasks for this exercise are:
    - Storage quote: **256**
    - Template: **EHS#1**
 
-   > **Note:** It might take a few minutes for the command processing to complete.
+   > **Note:** Creating the site can take 10 minutes or longer. Use the **-NoWait** parameter to create the site asynchronously. 
 
 1. Use **Get-SPOSite** to review the status of the new site.
-
-   > **Note:** Creating the site can take 10 minutes or longer.
-
 1. Disconnect from SharePoint Online.
+1. Keep the **Windows PowerShell** window open.
 
 ## Exercise 4: Managing Microsoft Teams
 
@@ -169,8 +167,8 @@ The main tasks for this exercise are:
 
 ### Task 1: Connect to Microsoft Teams
 
-1. In the **Windows PowerShell** console, install the module that allows you to manage Microsoft Teams.
-1. Connect to Microsoft Teams and sign in as your admin user.
+1. On **LON-CL1**, in the same **Windows PowerShell** window, install the module that allows you to manage Microsoft Teams.
+1. Connect to Microsoft Teams and sign in using your admin user account.
 1. To verify your connection, list the sites in your tenant.
 1. Use the **Get-Team** cmdlet to verify that there are no existing teams.
 
@@ -188,6 +186,6 @@ The main tasks for this exercise are:
 
 ### Task 3: Verify access to the team
 
-1. Open Microsoft Edge and go to **https://teams.microsoft.com**.
+1. Open Microsoft Edge and navigate to **https://teams.microsoft.com**.
 2. Sign in as Allan Yoo.
 3. In the Sales Team, create a new conversation with the text, **Prices are increasing 10% at month end**.
