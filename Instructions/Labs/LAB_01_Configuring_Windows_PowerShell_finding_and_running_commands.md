@@ -21,9 +21,11 @@ After completing this lab, you'll be able to:
 - Find and run Windows PowerShell commands.
 - Use Windows PowerShell Help and About topics to learn new shell concepts and techniques.
 
-## Estimated time: 60 minutes
+## Estimated time
 
-## Lab Setup
+60 minutes
+
+## Lab setup
 
 Virtual machines: **AZ-040T00A-LON-DC1** and **AZ-040T00A-LON-CL1**
 
@@ -31,7 +33,7 @@ User name: **Adatum\\Administrator**
 
 Password: **Pa55w.rd**
 
-## Lab Startup
+## Lab startup
 
 1. Select  **LON-DC1**.
 1. Sign in by using the following credentials:
@@ -66,13 +68,13 @@ The main tasks for this exercise are:
 
 ### Task 3: Start a shell transcript
 
-1. In the Windows PowerShell console, enter the following command, and then select Enter:
+1. In the **Windows PowerShell console**, enter the following command, and then press the Enter key:
 
    ```ps
    Start-Transcript C:\DayOne.txt
    ```
 
-> **Note:** You've now started a transcript of your Windows PowerShell session. It'll save all commands that you enter and the command output to a text file until you run **Stop‑Transcript** or close the Windows PowerShell window. You can review the transcript's contents at any time by opening **C:\DayOne.txt**.
+> **Note:** You've now started a transcript of your Windows PowerShell session. It'll save all commands that you enter and the command output to a text file until you run **Stop‑Transcript** or close the **Windows PowerShell** window. You can review the transcript's contents at any time by opening **C:\DayOne.txt**.
 
 ### Exercise 1 results
 
@@ -80,20 +82,20 @@ After completing this exercise, you'll have opened and configured the Windows Po
 
 ## Exercise 2: Configuring the Windows PowerShell ISE application
 
-### Exercise Scenario 2
+### Exercise scenario 2
 
 In this exercise, you'll customize the appearance of the Windows PowerShell ISE application.
 
 The main tasks for this exercise are:
 
 1. Open the Windows PowerShell ISE application as Administrator.
-1. Customize the appearance of the ISE to use the single-pane view, hide the **Command** pane, and adjust the font size.
+1. Customize the ISE's appearance to use a single-pane view, hide the **Command** pane, and adjust the font size.
 
 ### Task 1: Open the Windows PowerShell ISE application as Administrator
 
 1. Right-click the **Windows PowerShell** icon on the taskbar or activate its context menu, and then open the **Windows PowerShell ISE** application as **Administrator**.
 
-### Task 2: Customize the ISE's appearance to use a single-pane view, hide the Command pane, and adjust the font size
+### Task 2: Customize the appearance of the ISE to use the single-pane view, hide the Command pane, and adjust the font size
 
 1. Configure the ISE to use the single-pane view and display the console pane.
 2. Hide the **Command** pane.
@@ -106,7 +108,7 @@ After completing this exercise, you'll have customized the appearance of the Win
 
 ## Exercise 3: Finding and running Windows PowerShell commands
 
-### Exercise Scenario 3
+### Exercise scenario 3
 
 In this exercise, you'll use Windows PowerShell’s **Get-Help** and **Get-Command** commands to discover new commands that can complete specific tasks within Windows PowerShell. You'll also run several basic Windows PowerShell commands. In some instances, you might have to find the commands that you'll use to complete the task.
 
@@ -153,7 +155,7 @@ After completing this exercise, you'll have demonstrated your ability to find an
 
 ## Exercise 4: Using About files
 
-### Exercise Scenario 4
+### Exercise scenario 4
 
 In this exercise, you'll use help discovery techniques to find content in **About** files, and then use that content to answer questions about global Windows PowerShell functionality.
 

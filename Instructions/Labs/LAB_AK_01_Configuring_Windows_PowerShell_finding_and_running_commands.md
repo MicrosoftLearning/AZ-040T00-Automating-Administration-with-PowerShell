@@ -1,11 +1,11 @@
 ---
 lab:
-    title: 'Lab: Configuring Windows PowerShell, and finding and running commands'
+    title: 'Lab answer key: Configuring Windows PowerShell, and finding and running commands'
     type: 'Answer Key'
     module: 'Module 1: Getting Started with Windows PowerShell'
 ---
 
-# Lab: Configuring Windows PowerShell, and finding and running commands
+# Lab answer key: Configuring Windows PowerShell, and finding and running commands
 
 ## Exercise 1: Configuring the Windows PowerShell console application
 
@@ -15,13 +15,13 @@ lab:
 1. Enter **powershell** to display the Windows PowerShell icon. Make sure that the icon name displays **Windows PowerShell** and not **Windows PowerShell (x86)**.
 1. Right-click **Windows PowerShell** or activate its context menu, and then select **Run as administrator**.
 1. Make sure that the window title bar reads **Administrator** and doesn't include the text **(x86)**. This indicates that it is the 64-bit console application and that an administrator is running it.
-1. On the taskbar, right-click the **Windows PowerShell** icon or activate its context menu, and then select **Pin to taskbar**. The Windows PowerShell console should now be open, run by **Administrator**, and available on the taskbar for future use.
+1. On the taskbar, right-click the **Windows PowerShell** icon or activate its context menu, and then select **Pin to taskbar**. The **Windows PowerShell console** should now be open, run by **Administrator**, and available on the taskbar for future use.
 
 ### Task 2: Configure the Windows PowerShell console application
 
 1. To configure Windows PowerShell to use the **Consolas** font:
 
-   a.   Select the control box in the upper-left corner of the **Windows PowerShell** console window.
+   a.   Select the control box in the upper-left corner of the **Windows PowerShell console** window.
 
    b.   Select **Properties**.
 
@@ -43,7 +43,7 @@ lab:
 
 ### Task 3: Start a shell transcript
 
-- In the Windows PowerShell console, enter the following command, and then press the Enter key:
+- In the **Windows PowerShell console**, enter the following command, and then press the Enter key:
 
    ```ps
    Start-Transcript C:\DayOne.txt
@@ -59,7 +59,7 @@ After completing this exercise, you'll have opened and configured the Windows Po
 
 ### Task 1: Open the Windows PowerShell ISE application as Administrator
 
-1. In the Windows PowerShell console, enter **ise**, and then press the Enter key.
+1. In the **Windows PowerShell console**, enter **ise**, and then press the Enter key.
 
    > **Note:** This method of opening the ISE will work correctly only when an administrator is running the console.
 
@@ -67,21 +67,23 @@ After completing this exercise, you'll have opened and configured the Windows Po
 
 1. Right-click the **Windows PowerShell** icon on the taskbar or activate its context menu, and then select **Run ISE as Administrator**. You should now be running Windows PowerShell ISE as **Administrator**.
 
-### Task 2: Customize the appearance of the ISE to use the single-pane view, hide the Command pane, and adjust the font size
+### Task 2: Customize the ISE's appearance to use a single-pane view, hide the Command pane, and adjust the font size
 
-1. To configure the ISE to use a single-pane view:
+1. To configure the ISE to use the single-pane view:
 
-    a. On the Windows PowerShell ISE toolbar, select the **Show Script Pane Maximized** option.
+    a. On the **Windows PowerShell ISE** toolbar, select the **Show Script Pane Maximized** option.
     
     b. Select the **Hide Script Pane** up-arrow icon to display the console.
+    
+    > **Note:** Alternatively, you can press the **Ctrl+R** key combination.
 
 1. Select the **Show** **Command Add-on** option to review the **Commands** pane, if it isn't showing.
 
-1. Select the **Show-Command Add-on** option to hide the **Commands** pane.
+1. Select the **Show Command Add-on** option to hide the **Commands** pane.
 
 1. Use the slider in the lower-right corner of the window to adjust the font size until you can review it comfortably.
 
-1. Close the Windows PowerShell ISE and the Windows PowerShell windows.
+1. Close the **Windows PowerShell ISE** and the **Windows PowerShell** windows.
 
 ### Exercise 2 results
 
@@ -89,7 +91,7 @@ After completing this exercise, you'll have customized the appearance of the Win
 
 ## Exercise 3: Finding and running Windows PowerShell commands
 
-### Task 1: Find commands that will accomplish specified tasks
+### Task 1: Find commands that'll accomplish specified tasks
 
 1. On **LON-CL1**, on the task bar, right‑click **Windows PowerShell**, and then select **Run as Administrator**.
 
@@ -327,7 +329,7 @@ After completing this exercise, you'll have demonstrated your ability to find an
    Get-Help about_comparison_operators -ShowWindow
    ```
 
-   Notice the **–Like** operator in the **about_Comparison_Operators** help, which displays in a modal window.
+   Notice the **–Like** operator in the **about_Comparison_Operators Help**, which displays in a modal window.
 
 1. To find the **-Like** operator, in the **Find** text box, enter **wildcard**, and then select **Next**.
 
@@ -353,8 +355,8 @@ After completing this exercise, you'll have demonstrated your ability to find an
    Get-Help about_signing 
    ```
 
-1. Learn about code signing. You should learn that **makecert.exe** is used to create a self-signed digital certificate.
+1. Learn about code signing. You should learn that **MakeCert.exe** is used to create a self-signed digital certificate.
 
 ### Exercise 4 results
 
-After completing this exercise, you'll have demonstrated your ability to locate help content in About files.
+After completing this exercise, you'll have demonstrated your ability to locate help content in **About** files.
