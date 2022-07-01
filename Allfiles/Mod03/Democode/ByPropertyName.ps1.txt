@@ -1,0 +1,14 @@
+﻿# Copy the contents of this file into the scripting pane of the ISE. 
+# Highlight one line and press F8 to execute just that line. 
+
+# 1
+Get-ADComputer LON-DC1 | Get-Process
+
+# 2
+Get-ADComputer LON-DC1 | Get-Member
+
+# 3
+Get-Help Get-Process –ShowWindow
+
+# 4
+Get-ADComputer LON-DC1 | Select-Object @{n='ComputerName';e={$PSItem.Name}} | Get-Process

@@ -1,11 +1,11 @@
 ---
 lab:
-    title: 'Lab: Configuring Windows PowerShell, and finding and running commands'
+    title: 'Lab answer key: Configuring Windows PowerShell, and finding and running commands'
     type: 'Answer Key'
     module: 'Module 1: Getting Started with Windows PowerShell'
 ---
 
-# Lab: Configuring Windows PowerShell, and finding and running commands
+# Lab answer key: Configuring Windows PowerShell, and finding and running commands
 
 ## Exercise 1: Configuring the Windows PowerShell console application
 
@@ -15,13 +15,13 @@ lab:
 1. Enter **powershell** to display the Windows PowerShell icon. Make sure that the icon name displays **Windows PowerShell** and not **Windows PowerShell (x86)**.
 1. Right-click **Windows PowerShell** or activate its context menu, and then select **Run as administrator**.
 1. Make sure that the window title bar reads **Administrator** and doesn't include the text **(x86)**. This indicates that it is the 64-bit console application and that an administrator is running it.
-1. On the taskbar, right-click the **Windows PowerShell** icon or activate its context menu, and then select **Pin to taskbar**. The Windows PowerShell console should now be open, run by **Administrator**, and available on the taskbar for future use.
+1. On the taskbar, right-click the **Windows PowerShell** icon or activate its context menu, and then select **Pin to taskbar**. The **Windows PowerShell console** should now be open, run by **Administrator**, and available on the taskbar for future use.
 
 ### Task 2: Configure the Windows PowerShell console application
 
 1. To configure Windows PowerShell to use the **Consolas** font:
 
-   a.   Select the control box in the upper-left corner of the **Windows PowerShell** console window.
+   a.   Select the control box in the upper-left corner of the **Windows PowerShell console** window.
 
    b.   Select **Properties**.
 
@@ -43,7 +43,7 @@ lab:
 
 ### Task 3: Start a shell transcript
 
-- In the Windows PowerShell console, enter the following command, and then select Enter:
+- In the **Windows PowerShell console**, enter the following command, and then press the Enter key:
 
    ```ps
    Start-Transcript C:\DayOne.txt
@@ -59,7 +59,7 @@ After completing this exercise, you'll have opened and configured the Windows Po
 
 ### Task 1: Open the Windows PowerShell ISE application as Administrator
 
-1. In the Windows PowerShell console, enter **ise**, and then select Enter.
+1. In the **Windows PowerShell console**, enter **ise**, and then press the Enter key.
 
    > **Note:** This method of opening the ISE will work correctly only when an administrator is running the console.
 
@@ -67,21 +67,23 @@ After completing this exercise, you'll have opened and configured the Windows Po
 
 1. Right-click the **Windows PowerShell** icon on the taskbar or activate its context menu, and then select **Run ISE as Administrator**. You should now be running Windows PowerShell ISE as **Administrator**.
 
-### Task 2: Customize the appearance of the ISE to use the single-pane view, hide the Command pane, and adjust the font size
+### Task 2: Customize the ISE's appearance to use a single-pane view, hide the Command pane, and adjust the font size
 
-1. To configure the ISE to use a single-pane view:
+1. To configure the ISE to use the single-pane view:
 
-    a. On the Windows PowerShell ISE toolbar, select the **Show Script Pane Maximized** option.
+    a. On the **Windows PowerShell ISE** toolbar, select the **Show Script Pane Maximized** option.
     
     b. Select the **Hide Script Pane** up-arrow icon to display the console.
+    
+    > **Note:** Alternatively, you can press the **Ctrl+R** key combination.
 
 1. Select the **Show** **Command Add-on** option to review the **Commands** pane, if it isn't showing.
 
-1. Select the **Show-Command Add-on** option to hide the **Commands** pane.
+1. Select the **Show Command Add-on** option to hide the **Commands** pane.
 
 1. Use the slider in the lower-right corner of the window to adjust the font size until you can review it comfortably.
 
-1. Close the Windows PowerShell ISE and the Windows PowerShell windows.
+1. Close the **Windows PowerShell ISE** and the **Windows PowerShell** windows.
 
 ### Exercise 2 results
 
@@ -89,11 +91,11 @@ After completing this exercise, you'll have customized the appearance of the Win
 
 ## Exercise 3: Finding and running Windows PowerShell commands
 
-### Task 1: Find commands that will accomplish specified tasks
+### Task 1: Find commands that'll accomplish specified tasks
 
 1. On **LON-CL1**, on the task bar, right‑click **Windows PowerShell**, and then select **Run as Administrator**.
 
-1. In the console, enter one of the following commands, and then select Enter:
+1. In the console, enter one of the following commands, and then press the Enter key:
 
    ```ps
    Get-Help *resolve* 
@@ -113,7 +115,7 @@ After completing this exercise, you'll have customized the appearance of the Win
 
    > **Note:** The first two commands display a list of commands that use *Resolve* anywhere in their names. The third displays a list of commands that use the verb *Resolve* in their name. All three will return the same results in the lab environment. This should lead you to the **Resolve-DNSName** command.
 
-1. In the console, enter one of the following commands, and then select Enter:
+1. In the console, enter one of the following commands, and then press the Enter key:
 
    ```ps
    Get-Help *adapter* 
@@ -141,7 +143,7 @@ After completing this exercise, you'll have customized the appearance of the Win
 
 1. Run **Get-Help Set-NetAdapter** to review the help for that command. This should lead you to the *‑MACAddress* parameter.
 
-1. In the console, enter one of the following commands, and then select Enter:
+1. In the console, enter one of the following commands, and then press the Enter key:
 
    ```ps
    Get-Help *sched* 
@@ -159,9 +161,9 @@ After completing this exercise, you'll have customized the appearance of the Win
    Get-Module *sched* -ListAvailable
    ```
 
-   > **Note:** The first two commands display a list of commands that use *Sched* in their name. The third displays a list of modules with *Sched* in their name, which should lead you to the module **ScheduledTasks**. If you then run the command `Get-Command -Module \*ScheduledTask\*`, you'll get a list of commands in that module. This should lead you to the **Enable-ScheduledTask** command.
+   > **Note:** The first two commands display a list of commands that use *Sched* in their name. The third displays a list of modules with *Sched* in their name, which should lead you to the module **ScheduledTasks**. If you then run the command `Get-Command -Module *ScheduledTasks*`, you'll get a list of commands in that module. This should lead you to the **Enable-ScheduledTask** command.
 
-1. In the console, enter one of the following commands, and then select Enter:
+1. In the console, enter one of the following commands, and then press the Enter key:
 
    ```ps
    Get-Command –Verb Block 
@@ -175,7 +177,7 @@ After completing this exercise, you'll have customized the appearance of the Win
 
    > **Note:** These display a list of commands, which should lead you to the **Block-SmbShareAccess** command. Then, run **Get-Help Block-SmbShareAccess** to learn that the command applies a Deny entry to the file share discretionary access control list (DACL).
 
-1. In the console, enter the following command, and then select Enter:
+1. In the console, enter the following command, and then press the Enter key:
 
    ```ps
    Get-Help *branch*
@@ -185,7 +187,7 @@ After completing this exercise, you'll have customized the appearance of the Win
 
    A list of topics containing the text *branch* displays, but none appear related to clearing the **BranchCache** cache.
 
-1. In the console, enter one of the following commands, and then select Enter:
+1. In the console, enter one of the following commands, and then press the Enter key:
 
    ```ps
    Get-Help *cache* 
@@ -205,7 +207,7 @@ After completing this exercise, you'll have customized the appearance of the Win
 
    > **Note:** The first two commands will display a list of commands containing *Cache* in the name. The third displays a list of commands using the verb *Clear* in the name. Either way, you should discover the **Clear-BCCache** command.
 
-1. In the console, enter one of the following commands, and then select Enter:
+1. In the console, enter one of the following commands, and then press the Enter key:
 
    ```ps
    Get-Help *firewall*
@@ -231,7 +233,7 @@ After completing this exercise, you'll have customized the appearance of the Win
 
    > **Note:** These display a list of commands that use those words in their names, which should lead you to the **Get-NetFirewallRule** command.
 
-1. In the console, enter the following command, and then select Enter:
+1. In the console, enter the following command, and then press the Enter key:
 
    ```ps
    Get-Help Get-NetFirewallRule –Full
@@ -239,7 +241,7 @@ After completing this exercise, you'll have customized the appearance of the Win
 
    > **Note:** This will display the help for the command, so you can discover the *–Enabled* parameter.
 
-1. In the console, enter the following command, and then select Enter:
+1. In the console, enter the following command, and then press the Enter key:
 
    ```ps
    Get-Help *address* 
@@ -247,7 +249,7 @@ After completing this exercise, you'll have customized the appearance of the Win
 
    > **Note:** This will display a list of commands that use *address* in their names. This should lead you to the **Get-NetIPAddress** command.
 
-1. In the console, enter the following command, and then select Enter:
+1. In the console, enter the following command, and then press the Enter key:
 
    ```ps
    Get-Command –Verb suspend
@@ -255,7 +257,7 @@ After completing this exercise, you'll have customized the appearance of the Win
 
    > **Note:** This displays a list of commands that use the verb *Suspend* in their names. This should lead you to the **Suspend-PrintJob** command.
 
-1. In the console, enter one of the following commands, and then select Enter:
+1. In the console, enter one of the following commands, and then press the Enter key:
 
    ```ps
    Get-Alias Type
@@ -273,25 +275,25 @@ After completing this exercise, you'll have customized the appearance of the Win
 
 1. Ensure you are signed in on the **LON-CL1** virtual machine as **Adatum\\Administrator**.
 
-2. To display a list of enabled firewall rules, in the console, enter the following command, and then select Enter:
+2. To display a list of enabled firewall rules, in the console, enter the following command, and then press the Enter key:
 
    ```ps
    Get-NetFirewallRule -Enabled True
    ```
 
-3. To display a list of all local IPv4 addresses, in the console, enter the following command, and then select Enter:
+3. To display a list of all local IPv4 addresses, in the console, enter the following command, and then press the Enter key:
 
    ```ps
    Get-NetIPAddress –AddressFamily IPv4
    ```
 
-4. To set the startup type of the Background Intelligent Transfer Service (BITS), in the console, enter the following command, and then select Enter:
+4. To set the startup type of the Background Intelligent Transfer Service (BITS), in the console, enter the following command, and then press the Enter key:
 
    ```ps
    Set-Service –Name BITS –StartupType Automatic 
    ```
 
-5. To test the connection to **LON-DC1**, in the console, enter the following command, and then select Enter:
+5. To test the connection to **LON-DC1**, in the console, enter the following command, and then press the Enter key:
 
    ```ps
    Test-Connection –ComputerName LON-DC1 –Quiet
@@ -299,7 +301,7 @@ After completing this exercise, you'll have customized the appearance of the Win
 
    > **Note:** This command returns only a True or False value, without any other output.
 
-6. To display the newest 10 entries from the Security event log, in the console, enter the following command, and then select Enter:
+6. To display the newest 10 entries from the Security event log, in the console, enter the following command, and then press the Enter key:
 
    ```ps
    Get-EventLog –LogName Security –Newest 10 
@@ -315,25 +317,25 @@ After completing this exercise, you'll have demonstrated your ability to find an
 
 1. Ensure you're still signed in to **LON-CL1** as **Adatum\\Administrator** from the previous exercise.
 
-1. To find operators used for wildcard string comparison, in the console, enter the following command, and then select Enter:
+1. To find operators used for wildcard string comparison, in the console, enter the following command, and then press the Enter key:
 
    ```ps
    Get-Help *comparison*
    ```
 
-1. In the console, enter the following command, and then select Enter:
+1. In the console, enter the following command, and then press the Enter key:
 
    ```ps
    Get-Help about_comparison_operators -ShowWindow
    ```
 
-   Notice the **–Like** operator in the **about_Comparison_Operators** help, which displays in a modal window.
+   Notice the **–Like** operator in the **about_Comparison_Operators Help**, which displays in a modal window.
 
 1. To find the **-Like** operator, in the **Find** text box, enter **wildcard**, and then select **Next**.
 
 1. After reviewing the **about_Comparison_Operators** file, you should learn that typical operators are not case-sensitive. Specific case-sensitive operators are provided in **about_Comparison_Operators**.
 
-1. To display the **COMPUTERNAME** environment variable, in the console, enter the following command, and then select Enter:
+1. To display the **COMPUTERNAME** environment variable, in the console, enter the following command, and then press the Enter key:
 
    ```ps
    $env:computername
@@ -341,20 +343,20 @@ After completing this exercise, you'll have demonstrated your ability to find an
 
    You could learn about this technique in **about_environment_variables**.
 
-1. In the console, enter the following command, and then select Enter:
+1. In the console, enter the following command, and then press the Enter key:
 
    ```ps
    Get-Help *signing*
    ```
 
-1. In the console, enter the following command, and then select Enter:
+1. In the console, enter the following command, and then press the Enter key:
 
    ```ps
    Get-Help about_signing 
    ```
 
-1. Learn about code signing. You should learn that **makecert.exe** is used to create a self-signed digital certificate.
+1. Learn about code signing. You should learn that **MakeCert.exe** is used to create a self-signed digital certificate.
 
 ### Exercise 4 results
 
-After completing this exercise, you'll have demonstrated your ability to locate help content in About files.
+After completing this exercise, you'll have demonstrated your ability to locate help content in **About** files.
