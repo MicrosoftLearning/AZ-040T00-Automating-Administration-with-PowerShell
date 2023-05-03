@@ -6,6 +6,12 @@ lab:
 
 # Lab: Configuring Windows PowerShell, and finding and running commands
 
+## WWL Tenants - Terms of Use
+
+If you are being provided with a tenant as a part of an instructor-led training delivery, please note that the tenant is made available for the purpose of supporting the hands-on labs in the instructor-led training. 
+Tenants should not be shared or used for purposes outside of hands-on labs. The tenant used in this course is a trial tenant and cannot be used or accessed after the class is over and are not eligible for extension. 
+Tenants must not be converted to a paid subscription. Tenants obtained as a part of this course remain the property of Microsoft Corporation and we reserve the right to obtain access and repossess at any time. 
+
 ## Scenario
 
 You're an administrator who'll use Windows PowerShell to automate many administrative tasks. You must ensure that you can successfully start the correct Windows PowerShell host applications and configure them for future use by customizing their appearance.
