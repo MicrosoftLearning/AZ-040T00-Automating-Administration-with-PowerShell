@@ -52,7 +52,7 @@ The PowerShell script execution policy must be set to remote signed or less rest
 
 1. At the **Enter password** prompt, enter your password, and then select **Sign in**.
 
-1. To review a list of users in Azure AD, enter the following command, and then press the Enter key:
+1. To review a list of users in Microsoft Entra ID, enter the following command, and then press the Enter key:
 
    ```powershell
    Get-MgUser
@@ -113,7 +113,7 @@ The PowerShell script execution policy must be set to remote signed or less rest
 
 ### Task 3: Create and license a new user
 
-1. To create another Azure AD user, in the **Administrator: Windows PowerShell** console, enter the following command, and then press the Enter key:
+1. To create another Microsoft Entra user, in the **Administrator: Windows PowerShell** console, enter the following command, and then press the Enter key:
 
    ```powershell
    New-MgUser -DisplayName "Allan Yoo" -UserPrincipalName Allan@$verifiedDomain -AccountEnabled -PasswordProfile $PasswordProfile -MailNickName "Allan"
