@@ -45,7 +45,7 @@ The PowerShell script execution policy must be set to remote signed or less rest
 
    ```powershell
    # Using interactive authentication for users, groups, teamsettings, RoleManagement.
-   Connect-MgGraph -Scopes "User.ReadWrite.All", "Application.ReadWrite.All", "Directory.Read.All", "Sites.ReadWrite.All", "Directory.ReadWrite.All", "Group.ReadWrite.All", "RoleManagement.ReadWrite.Directory"
+   Connect-MgGraph -Scopes "User.ReadWrite.All", "Application.ReadWrite.All", "Sites.ReadWrite.All", "Directory.ReadWrite.All", "Group.ReadWrite.All", "RoleManagement.ReadWrite.Directory"
    ```
 
 1. In the **Sign in to your account** window, enter the name of the user account with the Global Administrator role in the Microsoft Entra ID tenant you will be using in this lab, and then select **Next**.
