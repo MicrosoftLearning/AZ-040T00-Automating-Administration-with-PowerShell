@@ -44,8 +44,8 @@ The PowerShell script execution policy must be set to remote signed or less rest
 1. To connect to Microsoft.Graph, enter the following command, and then press the Enter key:
 
    ```powershell
-   # Using interactive authentication for users, groups, teamsettings.
-   Connect-MgGraph -Scopes "User.ReadWrite.All", "Application.ReadWrite.All", "Sites.ReadWrite.All", "Directory.ReadWrite.All", "Group.ReadWrite.All", "TeamSettings.ReadWrite.All"
+   # Using interactive authentication for users, groups, teamsettings, RoleManagement.
+   Connect-MgGraph -Scopes "User.ReadWrite.All", "Application.ReadWrite.All", "Directory.Read.All", "Sites.ReadWrite.All", "Directory.ReadWrite.All", "Group.ReadWrite.All", "RoleManagement.ReadWrite.Directory"
    ```
 
 1. In the **Sign in to your account** window, enter the name of the user account with the Global Administrator role in the Microsoft Entra ID tenant you will be using in this lab, and then select **Next**.
@@ -84,7 +84,7 @@ The PowerShell script execution policy must be set to remote signed or less rest
    New-MgUser -DisplayName "Noreen Riggs" -UserPrincipalName "Noreen@$verifiedDomain" -AccountEnabled -PasswordProfile $PasswordProfile -MailNickName "Noreen"
    ```
 
-1. To store a reference to the new user ID in a variable, enter the following command, and then press the Enter key:
+1. To store a reference to the new user in a variable, enter the following command, and then press the Enter key:
 
    ```powershell
    $user = Get-MgUser -UserId "Noreen@$verifiedDomain"
@@ -96,11 +96,24 @@ The PowerShell script execution policy must be set to remote signed or less rest
    $role = Get-MgDirectoryRole | Where {$_.displayName -eq 'Global Administrator'}
    ```
 
+1. To show the new created user ID (Noreen), enter the following command, and then press the Enter key:
+
+   ```powershell
+   $user.id
+   ```
+
+1. Copy the Noreen's user ID, that you will need to use in the next step.
+
 1. To assign the Global Administrator role to Noreen's user account, enter the following command, and then press the Enter key:
 
    ```powershell
-   New-MgDirectoryRoleMemberByRef -DirectoryRoleId $role.id `
-    -AdditionalProperties @{ "@odata.id" = "https://graph.microsoft.com/v1.0/directoryObjects/$user.id" }
+   New-MgDirectoryRoleMemberByRef -DirectoryRoleId $role.id  
+   ```
+
+1. When prompted for **OdataId**, enter the following command, replacing <user-ID> with the user ID for Noreen that you copied in the previous step, and then press the Enter key:
+   
+   ```powershell  
+   https://graph.microsoft.com/v1.0/directoryObjects/<user-ID>
    ```
 
 1. To verify that the Global Administrator role was assigned to Noreen's user account, enter the following command, and then press the Enter key:
@@ -222,7 +235,7 @@ The PowerShell script execution policy must be set to remote signed or less rest
 1. To install the **ExchangeOnlineManagement** module on **LON-CL1**, in the **Administrator: Windows PowerShell** console, enter the following command, and then press the Enter key (when prompted for confirmation, enter **A** and press the Enter key again):
 
    ```powershell
-   Install-Module ExchangeOnlineManagement
+   Install-Module ExchangeOnlineManagement -force
    ```
 
 1. To connect to Exchange Online, enter the following command, and then press the Enter key:
@@ -285,8 +298,7 @@ The PowerShell script execution policy must be set to remote signed or less rest
 
 1. To install the SharePoint Online Management Shell, on **LON-CL1**, in the **Administrator: Windows PowerShell** console, enter the following command, and then press the Enter key (when prompted for confirmation, enter **A** and press the Enter key again):
 
-   ```powershell
-   Get-Module -Name Microsoft.Online.SharePoint.PowerShell -ListAvailable | Select Name,Version
+   ```powershell  
    Install-Module -Name Microsoft.Online.SharePoint.PowerShell -Scope CurrentUser
    ```
 
