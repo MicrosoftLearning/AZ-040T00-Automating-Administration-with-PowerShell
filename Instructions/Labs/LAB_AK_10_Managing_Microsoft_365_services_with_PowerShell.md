@@ -96,24 +96,11 @@ The PowerShell script execution policy must be set to remote signed or less rest
    $role = Get-MgDirectoryRole | Where {$_.displayName -eq 'Global Administrator'}
    ```
 
-1. To show the new created user ID (Noreen), enter the following command, and then press the Enter key:
-
-   ```powershell
-   $user.id
-   ```
-
-1. Copy the Noreen's user ID, that you will need to use in the next step.
-
 1. To assign the Global Administrator role to Noreen's user account, enter the following command, and then press the Enter key:
 
    ```powershell
-   New-MgDirectoryRoleMemberByRef -DirectoryRoleId $role.id  
-   ```
-
-1. When prompted for **OdataId**, enter the following command, replacing <user-ID> with the user ID for Noreen that you copied in the previous step, and then press the Enter key:
-   
-   ```powershell  
-   https://graph.microsoft.com/v1.0/directoryObjects/<user-ID>
+   $OdataId = "https://graph.microsoft.com/v1.0/directoryObjects/" + $user.id  
+   New-MgDirectoryRoleMemberByRef -DirectoryRoleId $role.id -OdataId $OdataId    
    ```
 
 1. To verify that the Global Administrator role was assigned to Noreen's user account, enter the following command, and then press the Enter key:
