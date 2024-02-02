@@ -28,11 +28,19 @@ lab:
    ```powershell
    $PSVersionTable.PSVersion
    ```
-    
-1. Enter the following command, and then press the Enter key to update the PowerShell 7:
+
+1. Enter the following commands, and then press the Enter key to update the PowerShell 7:
       
    ```powershell
+   # Update PowerShell 7 to the latest version
    iex "& { $(irm https://aka.ms/install-powershell.ps1 -UseBasicP) }"
+
+   # Open a new PowerShell 7 window as an administrator
+   Start-Process -FilePath "C:\Users\Administrator.ADATUM\AppData\Local\Microsoft\powershell\pwsh.exe" -Verb RunAs
+
+   # Close the current PowerShell window
+   Stop-Process -Id $PID 
+   
    ```  
 
 1. To set your execution policy to the proper value so you can install the Az module, enter the following command, and then press the Enter key. Enter **Y** to confirm your choice:
