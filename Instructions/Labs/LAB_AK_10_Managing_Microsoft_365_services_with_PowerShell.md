@@ -29,7 +29,7 @@ The PowerShell script execution policy must be set to remote signed or less rest
    Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
    ```
 
-1. To install the **Microsoft.Graph** module, in the **Administrator: Windows PowerShell** console, enter the following command, and then press the Enter key (when prompted for confirmation, type **Y** and press the Enter key again twice in a row):
+1. To install the **Microsoft.Graph** module, in the **Administrator: Windows PowerShell** console, enter the following command, and then press the Enter key (when prompted for confirmation, type `Y` and press the Enter key again twice in a row):
    
    ```powershell
    Install-Module Microsoft.Graph -Scope CurrentUser
@@ -80,7 +80,7 @@ The PowerShell script execution policy must be set to remote signed or less rest
 
 1. To create a new Microsoft Entra ID user, enter the following commands, and then press the Enter key:
 
-   ```powershell 
+   ```powershell
    New-MgUser -DisplayName "Noreen Riggs" -UserPrincipalName "Noreen@$verifiedDomain" -AccountEnabled -PasswordProfile $PasswordProfile -MailNickName "Noreen"
    ```
 
@@ -155,12 +155,7 @@ The PowerShell script execution policy must be set to remote signed or less rest
 1. To create an **AssignedLicenses** object, enter the following command, and then press the Enter key:
 
    ```powershell
-   $LicensesToAssign = @(
-    New-Object -TypeName PSCustomObject -Property @{
-        DisabledPlans = @()
-        SkuId = $SkuId
-    }
-   )
+   $LicensesToAssign = @($License)  
    ```
 
 1. To add the **AssignedLicense** object to the **AddLicenses** property, enter the following command, and then press the Enter key:
@@ -219,7 +214,7 @@ The PowerShell script execution policy must be set to remote signed or less rest
 
 ### Task 1: Connect to Exchange Online
 
-1. To install the **ExchangeOnlineManagement** module on **LON-CL1**, in the **Administrator: Windows PowerShell** console, enter the following command, and then press the Enter key (when prompted for confirmation, enter **A** and press the Enter key again):
+1. To install the **ExchangeOnlineManagement** module on **LON-CL1**, in the **Administrator: Windows PowerShell** console, enter the following command, and then press the Enter key (when prompted for confirmation, enter `A` and press the Enter key again):
 
    ```powershell
    Install-Module ExchangeOnlineManagement -force
@@ -283,9 +278,9 @@ The PowerShell script execution policy must be set to remote signed or less rest
 
 ### Task 1: Connect to SharePoint Online
 
-1. To install the SharePoint Online Management Shell, on **LON-CL1**, in the **Administrator: Windows PowerShell** console, enter the following command, and then press the Enter key (when prompted for confirmation, enter **A** and press the Enter key again):
+1. To install the SharePoint Online Management Shell, on **LON-CL1**, in the **Administrator: Windows PowerShell** console, enter the following command, and then press the Enter key (when prompted for confirmation, enter `A` and press the Enter key again):
 
-   ```powershell  
+   ```powershell
    Install-Module -Name Microsoft.Online.SharePoint.PowerShell -Scope CurrentUser
    ```
 
@@ -334,7 +329,7 @@ The PowerShell script execution policy must be set to remote signed or less rest
 
 ### Task 1: Connect to Microsoft Teams
 
-1. To install the Microsoft Teams PowerShell Module, in the **Administrator: Windows PowerShell** console, enter the following command, and then press the Enter key (when prompted for confirmation, enter **A** and press the Enter key again):
+1. To install the Microsoft Teams PowerShell Module, in the **Administrator: Windows PowerShell** console, enter the following command, and then press the Enter key (when prompted for confirmation, enter `A` and press the Enter key again):
 
    ```powershell
    Install-Module -Name MicrosoftTeams -Force -AllowClobber
