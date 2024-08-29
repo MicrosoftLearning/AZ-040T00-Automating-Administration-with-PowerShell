@@ -92,7 +92,7 @@ The main tasks for this exercise are:
 1. Sign in to the **LON-CL1** as **Adatum\\Administrator** with the password **Pa55w.rd**.
 1. Start **Windows PowerShell** as an administrator.
 1. Display the name, department, and city for all the users in the IT department who are located in London, in alphabetical order by name.
-1. Set the **Office** location for all the users to **LON-A/1000**.
+1. Set the **Office** location for all those users to **LON-A/1000**.
 1. Display the list of users again, including the office assignment for each user.
 
 ### Task 2: Generate files listing the Active Directory users in the IT department
