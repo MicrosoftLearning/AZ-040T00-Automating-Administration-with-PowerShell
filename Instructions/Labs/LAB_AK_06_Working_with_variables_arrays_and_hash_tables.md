@@ -101,7 +101,7 @@ lab:
    $cutOffDate = $today.AddDays(-30)
    ```
 
-1. To review users that haven't signed in for the last 30 days, enter the following command, and then press the Enter key:
+1. To review users that have signed in for the last 30 days, enter the following command, and then press the Enter key:
 
    ```powershell
    Get-ADUser -Properties LastLogonDate -Filter {LastLogonDate -gt $cutOffDate}

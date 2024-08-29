@@ -355,7 +355,7 @@ After completing this exercise, you'll have demonstrated your ability to find an
    Get-Help about_signing 
    ```
 
-1. Learn about code signing. You should learn that **MakeCert.exe** is used to create a self-signed digital certificate.
+1. Learn about code signing. You should learn that **New-SelfSignedCertificate** is used to create a self-signed digital certificate.
 
 ### Exercise 4 results
 
