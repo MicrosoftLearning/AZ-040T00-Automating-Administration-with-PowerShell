@@ -2,7 +2,7 @@
 lab:
     title: 'Lab: Using scripts with PowerShell'
     type: 'Answer Key'
-    module: 'Module 4: Windows PowerShell scripting'
+    module: 'Module 7: Windows PowerShell scripting'
 ---
 
 # Lab answer key: Using scripts with PowerShell
