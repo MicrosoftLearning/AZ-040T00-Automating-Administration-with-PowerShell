@@ -1,7 +1,7 @@
 ---
 lab:
     title: 'Lab: Using scripts with PowerShell'
-    module: 'Module 4: Windows PowerShell scripting'
+    module: 'Module 7: Windows PowerShell scripting'
 ---
 
 # Lab: Using scripts with PowerShell
