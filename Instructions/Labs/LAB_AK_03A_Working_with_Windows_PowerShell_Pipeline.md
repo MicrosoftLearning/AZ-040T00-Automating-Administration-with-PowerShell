@@ -7,7 +7,7 @@ lab:
 
 # Lab answer key: Using PowerShell pipeline
 
-## Exercise 1: Selecting, sorting, and displaying data
+## Exercise 1: Selecting, sorting, and displaying data using Powershell Binding
 
 ### Task 1: Display the current day of the year
 
@@ -21,13 +21,28 @@ lab:
 
    > **Note:** Notice the **Get-Date** command.
 
+1. In the console, enter the following command, to check the type of Pipeline Binding accepted by the cmdlet:
+
+   ```powershell
+   Get-Help Get-Date -Parameter * | Where-Object { $_.PipelineInput -match "true" } 
+      ```
+
+   > **Note:** Notice the **Accept pipeline input** and **Parameter set name** values.
+
+1. In the console, enter the following command, and then press the Enter key: 
+
+      ```powershell
+   Get-Date
+   ``` 
+
 1. In the console, enter the following command, and then press the Enter key:  
 
    ```powershell
    Get-Date | Get-Member
    ```
 
-   > **Note:** Notice the **DayOfYear** property.
+   > **Note:** Notice how the **(|)** allows the output of one cmdlet to be passed as input to another.
+   Notice the **DayOfYear** property.
 
 1. In the console, enter the following command, and then press the Enter key:
 
@@ -50,6 +65,15 @@ lab:
    ```
 
    > **Note:** Notice the **Get-Hotfix** command.
+
+1. In the console, enter the following command, to check the type of Pipeline Binding accepted by the cmdlet:
+
+   ```powershell
+   Get-Help Get-Hotfix -Parameter * | Where-Object { $_.PipelineInput -match "true" } 
+      ```
+
+   > **Note:** Notice the **Accept pipeline input** and **Parameter set name** values.
+
 
 1. In the console, enter the following command, and then press the Enter key:
 
