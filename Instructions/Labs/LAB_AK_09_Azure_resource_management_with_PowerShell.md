@@ -81,7 +81,7 @@ lab:
 
 1. In the **Welcome to Azure Cloud Shell** window, select **PowerShell**.
 
-1. On the **You have no storage mounted** page, review the note about the missing storage account that's needed for Cloud Shell to run. Verify that in the **Subscription** field, your subscription is selected, and then select **Create storage**. Wait until the storage account is created.
+1. On the **Getting started** page, ensure that the **No storage account required** option is selected, select your subscription in the **Subscription** dropdown menu, and select Apply. 
 
 1. When your storage account is created, the **Cloud Shell** console should open, and you should get a prompt in the format **PS /home/yourname>**.
 
@@ -89,7 +89,7 @@ lab:
 
 1. Enter `Get-AzResourceGroup` to review the resource group information.
 
-1. Use the drop-down list to switch from PowerShell to the **Bash** shell and confirm your choice.
+1. On the Cloud Shell page, select **Switch to Bash** and confirm your choice.
 
 1. At the Bash shell prompt, enter `az account list`, and then press the Enter key to review the information about your subscription. Also, try tab completion.
 
