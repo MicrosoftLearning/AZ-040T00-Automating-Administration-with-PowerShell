@@ -37,19 +37,17 @@ For this lab, you'll use the available virtual machine environment. Before you b
 
 ### Scenario 1
 
-You need to make sure that you activate your trial Azure subscription and install the Az module for Windows PowerShell.
+You need to sign in to the Azure subscription provided in your environment and install the Az module for Windows PowerShell.
 
 The main tasks for this exercise are:
 
-1. Activate your Azure subscription by using the Azure pass voucher.
+1. Sign in to the Azure subscription.
 1. Install the Azure Az module for PowerShell.
 
-### Task 1: Activate your Azure subscription by using Azure pass voucher
+### Task 1: Sign in to your Azure subscription
 
-1. On **LON-CL1**, open the Microsoft Edge browser and navigate to **https://www.microsoftazurepass.com/**.
-1. Sign in with the Microsoft account that you want to use for your trial Azure subscription.
-1. Use the Azure pass code provided by your instructor or lab hosting provider.
-1. Ensure that the **Subscriptions** page displays **Azure Pass - Sponsorship** with an **Active** status and that you have a balance of 50 USD.
+1. On **LON-CL1**, open the Microsoft Edge browser and navigate to **https://portal.azure.com/**.
+1. Sign in with the credentials provided by your instructor.
 
 ### Task 2: Install the Azure Az module for PowerShell
 
