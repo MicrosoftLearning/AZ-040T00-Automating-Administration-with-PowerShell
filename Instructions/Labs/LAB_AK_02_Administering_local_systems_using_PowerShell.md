@@ -5,7 +5,7 @@ lab:
     module: 'Module 2: Windows PowerShell for local systems administration'
 ---
 
-# Lab answer key: Performing local system administration with PowerShell
+# Performing local system administration with PowerShell
 
 ## Exercise 1: Creating and managing Active Directory objects
 
