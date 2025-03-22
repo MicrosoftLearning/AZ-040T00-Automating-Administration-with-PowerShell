@@ -5,7 +5,7 @@ lab:
     module: 'Module 4: Windows PowerShell scripting'
 ---
 
-# Lab answer key: Using scripts with PowerShell
+# Using scripts with PowerShell
 
 ## Exercise 1: Signing a script
 
