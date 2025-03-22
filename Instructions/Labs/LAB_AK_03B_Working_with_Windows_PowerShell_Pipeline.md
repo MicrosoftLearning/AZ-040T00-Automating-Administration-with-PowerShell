@@ -5,7 +5,7 @@ lab:
     module: 'Module 3: Working with the Windows PowerShell pipeline'
 ---
 
-# Lab answer key: Using PowerShell pipeline
+# Using PowerShell pipeline
 
 ## Exercise 1: Enumerating objects
 
