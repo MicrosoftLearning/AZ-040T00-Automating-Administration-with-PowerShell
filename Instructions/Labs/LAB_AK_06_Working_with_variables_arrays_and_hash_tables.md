@@ -5,7 +5,7 @@ lab:
     module: 'Module 6: Working with variables, arrays, and hash tables'
 ---
 
-# Lab answer key: Using variables, arrays, and hash tables in PowerShell
+# Using variables, arrays, and hash tables in PowerShell
 
 ## Exercise 1: Working with variable types
 
