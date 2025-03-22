@@ -1,6 +1,6 @@
 ---
 lab:
-    title: 'Lab answer key: Configuring Windows PowerShell, and finding and running commands'
+    title: 'Configuring Windows PowerShell, and finding and running commands'
     type: 'Answer Key'
     module: 'Module 1: Getting Started with Windows PowerShell'
 ---
