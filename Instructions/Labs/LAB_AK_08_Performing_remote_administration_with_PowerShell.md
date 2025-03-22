@@ -5,7 +5,7 @@ lab:
     module: 'Module 8: Administering remote computers with Windows PowerShell'
 ---
 
-# Lab answer key: Performing remote administration with PowerShell
+# Performing remote administration with PowerShell
 
 ## Exercise 1: Enabling remoting on the local computer
 
