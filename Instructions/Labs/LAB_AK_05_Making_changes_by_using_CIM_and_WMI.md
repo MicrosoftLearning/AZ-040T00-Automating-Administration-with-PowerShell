@@ -5,7 +5,7 @@ lab:
     module: 'Module 5: Querying management information by using CIM and WMI'
 ---
 
-# Lab answer key: Querying information by using WMI and CIM
+# Querying information by using WMI and CIM
 
 ## Exercise 1: Querying information by using WMI
 
