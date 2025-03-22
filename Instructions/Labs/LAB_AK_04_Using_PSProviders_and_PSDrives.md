@@ -5,7 +5,7 @@ lab:
     module: 'Module 4: Using PSProviders and PSDrives'
 ---
 
-# Lab answer key: Using PSProviders and PSDrives with PowerShell
+# Using PSProviders and PSDrives with PowerShell
 
 ## Exercise 1: Creating files and folders on a remote computer
 
