@@ -5,7 +5,7 @@ lab:
     module: 'Module 10: Managing Microsoft 365 services with PowerShell'
 ---
 
-# Lab answer key: Managing Microsoft 365 with PowerShell
+# Managing Microsoft 365 with PowerShell
 
 ## Exercise 1: Managing users and groups in Microsoft Entra ID
 
