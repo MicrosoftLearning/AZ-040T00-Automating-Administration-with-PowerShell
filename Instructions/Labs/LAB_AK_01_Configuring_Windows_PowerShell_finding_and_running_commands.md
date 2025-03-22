@@ -1,11 +1,11 @@
 ---
 lab:
-    title: 'Configuring Windows PowerShell, and finding and running commands'
+    title: 'Lab: Configuring Windows PowerShell, and finding and running commands'
     type: 'Answer Key'
     module: 'Module 1: Getting Started with Windows PowerShell'
 ---
 
-# Lab answer key: Configuring Windows PowerShell, and finding and running commands
+# Configuring Windows PowerShell, and finding and running commands
 
 ## Exercise 1: Configuring the Windows PowerShell console application
 
