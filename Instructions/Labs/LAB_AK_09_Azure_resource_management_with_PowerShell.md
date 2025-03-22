@@ -5,7 +5,7 @@ lab:
     module: 'Module 9: Managing Azure resources with PowerShell'
 ---
 
-# Lab answer key: Azure resource management with PowerShell
+# Azure resource management with PowerShell
 
 ## Exercise 1: Activating the Azure subscription and installing the PowerShell Az module
 
