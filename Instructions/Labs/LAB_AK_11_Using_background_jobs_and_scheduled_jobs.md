@@ -5,7 +5,7 @@ lab:
     module: 'Module 11: Using background jobs and scheduled jobs'
 ---
 
-# Lab answer key: Jobs management with PowerShell
+# Jobs management with PowerShell
 
 ## Exercise 1: Starting and managing jobs
 
