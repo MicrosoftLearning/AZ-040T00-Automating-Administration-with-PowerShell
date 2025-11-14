@@ -47,9 +47,9 @@ The main tasks for this exercise are:
 ### Task 1: Use string variables
 
 1. On **LON-CL1**, open a Windows PowerShell prompt.
-1. Create a variable `$logPath` that contains **C:\logs**\.
+1. Create a variable `$logPath` that contains the string **'C:\logs\'**.
 1. For `$logPath`, identify the type of variable and the available properties and methods.
-1. Create a variable `$logFile` that contains **log.txt**.
+1. Create a variable `$logFile` that contains the string **'log.txt'**.
 1. Update `$logPath` to include the contents of `$logFile`.
 1. Update the path stored in `$logPath` to use drive **D** instead of drive **C**.
 1. Leave the Windows PowerShell prompt open for the next task.
