@@ -1,7 +1,11 @@
 ---
 lab:
-    title: 'Lab: Performing remote administration with PowerShell'
-    module: 'Module 8: Administering remote computers with Windows PowerShell'
+  title: 'Lab: Performing remote administration with PowerShell'
+  module: 'Module 8: Administering remote computers with Windows PowerShell'
+  description: This lab should take approximately **60** minutes to complete.
+  duration: 60 minutes
+  level: 300
+  islab: true
 ---
 
 # Lab: Performing remote administration with PowerShell
