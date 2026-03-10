@@ -1,8 +1,12 @@
 ---
 lab:
-    title: 'Lab: Using variables, arrays, and hash tables in PowerShell'
-    type: 'Answer Key'
-    module: 'Module 6: Working with variables, arrays, and hash tables'
+  title: 'Lab: Using variables, arrays, and hash tables in PowerShell'
+  type: Answer Key
+  module: 'Module 6: Working with variables, arrays, and hash tables'
+  description: This lab should take approximately **45** minutes to complete.
+  duration: 45 minutes
+  level: 200
+  islab: true
 ---
 
 # Using variables, arrays, and hash tables in PowerShell
