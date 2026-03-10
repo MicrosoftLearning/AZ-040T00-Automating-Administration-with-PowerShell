@@ -1,8 +1,14 @@
 ---
 lab:
-    title: 'Lab: Managing Microsoft 365 with PowerShell'
-    type: 'Answer Key'
-    module: 'Module 10: Managing Microsoft 365 services with PowerShell'
+  title: 'Lab: Managing Microsoft 365 with PowerShell'
+  type: Answer Key
+  module: 'Module 10: Managing Microsoft 365 services with PowerShell'
+  description: This lab should take approximately **60** minutes to complete.
+  duration: 60 minutes
+  level: 400
+  islab: true
+  primarytopics:
+  - Microsoft 365
 ---
 
 # Managing Microsoft 365 with PowerShell
