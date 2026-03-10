@@ -1,8 +1,12 @@
 ---
 lab:
-    title: 'Lab: Using PSProviders and PSDrives with PowerShell'
-    type: 'Answer Key'
-    module: 'Module 4: Using PSProviders and PSDrives'
+  title: 'Lab: Using PSProviders and PSDrives with PowerShell'
+  type: Answer Key
+  module: 'Module 4: Using PSProviders and PSDrives'
+  description: This lab should take approximately **30** minutes to complete.
+  duration: 30 minutes
+  level: 200
+  islab: true
 ---
 
 # Using PSProviders and PSDrives with PowerShell
