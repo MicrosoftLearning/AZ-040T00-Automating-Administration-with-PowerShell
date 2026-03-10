@@ -1,7 +1,11 @@
 ---
 lab:
-    title: 'Lab: Jobs management with PowerShell'
-    module: 'Module 11: Using background jobs and scheduled jobs'
+  title: 'Lab: Jobs management with PowerShell'
+  module: 'Module 11: Using background jobs and scheduled jobs'
+  description: This lab should take approximately **15** minutes to complete.
+  duration: 15 minutes
+  level: 200
+  islab: true
 ---
 
 # Lab: Jobs management with PowerShell
