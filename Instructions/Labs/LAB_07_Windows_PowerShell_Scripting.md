@@ -1,7 +1,11 @@
 ---
 lab:
-    title: 'Lab: Using scripts with PowerShell'
-    module: 'Module 7: Windows PowerShell scripting'
+  title: 'Lab: Using scripts with PowerShell'
+  module: 'Module 7: Windows PowerShell scripting'
+  description: This lab should take approximately **150** minutes to complete.
+  duration: 150 minutes
+  level: 200
+  islab: true
 ---
 
 # Lab: Using scripts with PowerShell
