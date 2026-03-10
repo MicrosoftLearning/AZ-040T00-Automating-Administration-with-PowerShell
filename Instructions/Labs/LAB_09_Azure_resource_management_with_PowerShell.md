@@ -1,7 +1,13 @@
 ---
 lab:
-    title: 'Lab: Azure resource management with PowerShell'
-    module: 'Module 9: Managing Azure resources with PowerShell'
+  title: 'Lab: Azure resource management with PowerShell'
+  module: 'Module 9: Managing Azure resources with PowerShell'
+  description: This lab should take approximately **60** minutes to complete.
+  duration: 60 minutes
+  level: 300
+  islab: true
+  primarytopics:
+  - Azure
 ---
 
 # Lab: Azure resource management with PowerShell
