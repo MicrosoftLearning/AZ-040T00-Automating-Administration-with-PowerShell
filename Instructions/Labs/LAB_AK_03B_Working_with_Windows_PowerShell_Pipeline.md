@@ -1,8 +1,12 @@
 ---
 lab:
-    title: 'Lab: Using PowerShell pipeline'
-    type: 'Answer Key'
-    module: 'Module 3: Working with the Windows PowerShell pipeline'
+  title: 'Lab: Using PowerShell pipeline'
+  type: Answer Key
+  module: 'Module 3: Working with the Windows PowerShell pipeline'
+  description: This lab should take approximately **60** minutes to complete.
+  duration: 60 minutes
+  level: 300
+  islab: true
 ---
 
 # Using PowerShell pipeline
