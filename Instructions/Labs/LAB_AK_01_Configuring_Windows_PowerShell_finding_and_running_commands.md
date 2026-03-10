@@ -1,8 +1,14 @@
 ---
 lab:
-    title: 'Lab: Configuring Windows PowerShell, and finding and running commands'
-    type: 'Answer Key'
-    module: 'Module 1: Getting Started with Windows PowerShell'
+  title: 'Lab: Configuring Windows PowerShell, and finding and running commands'
+  type: Answer Key
+  module: 'Module 1: Getting Started with Windows PowerShell'
+  description: This lab should take approximately **60** minutes to complete.
+  duration: 60 minutes
+  level: 300
+  islab: true
+  primarytopics:
+  - Windows
 ---
 
 # Configuring Windows PowerShell, and finding and running commands
