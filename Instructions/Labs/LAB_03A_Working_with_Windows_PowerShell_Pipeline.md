@@ -1,7 +1,11 @@
 ---
 lab:
-    title: 'Lab A: Using PowerShell pipeline'
-    module: 'Module 3: Working with the Windows PowerShell pipeline'
+  title: 'Lab A: Using PowerShell pipeline'
+  module: 'Module 3: Working with the Windows PowerShell pipeline'
+  description: In this exercise, you'll use filtering to produce lists of management information that include only specified data and elements for the reports you must produce.
+  duration: 60 minutes
+  level: 400
+  islab: true
 ---
 
 # Lab: Using PowerShell pipeline
