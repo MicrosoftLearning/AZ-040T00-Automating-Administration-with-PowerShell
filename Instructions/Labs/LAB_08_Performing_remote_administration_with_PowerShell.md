@@ -1,7 +1,11 @@
 ---
 lab:
-    title: 'Lab: Performing remote administration with PowerShell'
-    module: 'Module 8: Administering remote computers with Windows PowerShell'
+  title: 'Lab: Performing remote administration with PowerShell'
+  module: 'Module 8: Administering remote computers with Windows PowerShell'
+  description: In this exercise, you'll connect to a remote computer and perform maintenance tasks.
+  duration: 60 minutes
+  level: 300
+  islab: true
 ---
 
 # Lab: Performing remote administration with PowerShell
