@@ -1,8 +1,12 @@
 ---
 lab:
-    title: 'Lab: Using PowerShell pipeline'
-    type: 'Answer Key'
-    module: 'Module 3: Working with the Windows PowerShell pipeline'
+  title: 'Lab: Using PowerShell pipeline'
+  type: Answer Key
+  module: 'Module 3: Working with the Windows PowerShell pipeline'
+  description: After completing this exercise, you should have created commands that manipulate multiple objects in the pipeline.
+  duration: 60 minutes
+  level: 300
+  islab: true
 ---
 
 # Using PowerShell pipeline
