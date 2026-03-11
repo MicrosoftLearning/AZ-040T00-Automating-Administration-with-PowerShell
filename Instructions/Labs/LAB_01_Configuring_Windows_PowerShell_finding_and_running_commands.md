@@ -1,8 +1,14 @@
 ---
 lab:
-    title: 'Lab: Configuring Windows PowerShell, and finding and running commands' 
-    module: 'Module 1: Getting Started with Windows PowerShell'
---- 
+  title: 'Lab: Configuring Windows PowerShell, and finding and running commands'
+  module: 'Module 1: Getting Started with Windows PowerShell'
+  description: To customize Windows PowerShell, you need to first make changes to the console. In this exercise, you'll open the Windows PowerShell console application and configure its appearance and layout.
+  duration: 60 minutes
+  level: 300
+  islab: true
+  primarytopics:
+    - Windows
+---
 
 # Lab: Configuring Windows PowerShell, and finding and running commands
 
