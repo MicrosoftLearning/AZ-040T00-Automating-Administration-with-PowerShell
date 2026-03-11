@@ -1,7 +1,11 @@
 ---
 lab:
-    title: 'Lab B: Using PowerShell pipeline'
-    module: 'Module 3: Working with the Windows PowerShell pipeline'
+  title: 'Lab B: Using PowerShell pipeline'
+  module: 'Module 3: Working with the Windows PowerShell pipeline'
+  description: In this exercise, you'll create commands that manipulate multiple objects in the pipeline. In some tasks, you need to use enumeration. In other tasks, you'll not need to use enumeration. Decide the best approach for each task.
+  duration: 60 minutes
+  level: 300
+  islab: true
 ---
 
 # Lab: Using PowerShell pipeline
