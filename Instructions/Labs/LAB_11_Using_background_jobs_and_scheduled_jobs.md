@@ -1,7 +1,11 @@
 ---
 lab:
-    title: 'Lab: Jobs management with PowerShell'
-    module: 'Module 11: Using background jobs and scheduled jobs'
+  title: 'Lab: Jobs management with PowerShell'
+  module: 'Module 11: Using background jobs and scheduled jobs'
+  description: Background jobs provide a useful way to run multiple commands simultaneously and long-running commands in the background. In this lab, you'll learn to create and manage two of the three basic kinds of jobs.
+  duration: 15 minutes
+  level: 200
+  islab: true
 ---
 
 # Lab: Jobs management with PowerShell
