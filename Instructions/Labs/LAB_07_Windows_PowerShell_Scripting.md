@@ -1,7 +1,11 @@
 ---
 lab:
-    title: 'Lab: Using scripts with PowerShell'
-    module: 'Module 7: Windows PowerShell scripting'
+  title: 'Lab: Using scripts with PowerShell'
+  module: 'Module 7: Windows PowerShell scripting'
+  description: You'd like to run a script that queries disk information from remote computers. To account for scenarios where the user doesn't have permission to query disk information on remote servers, you're updating the script to accept alternate credentials when specified.
+  duration: 150 minutes
+  level: 200
+  islab: true
 ---
 
 # Lab: Using scripts with PowerShell
