@@ -1,7 +1,11 @@
 ---
 lab:
-    title: 'Lab: Using PSProviders and PSDrives with PowerShell'
-    module: 'Module 4: Using PSProviders and PSDrives'
+  title: 'Lab: Using PSProviders and PSDrives with PowerShell'
+  module: 'Module 4: Using PSProviders and PSDrives'
+  description: In this exercise, you will create a new registry key to store configuration data for scripts that you'll develop in the future. You'll also create a registry value in that key where you'll store the name of the PSDrive for the scripts to use. You want to verify that you can retrieve the value from the registry in scripts that you'll create later.
+  duration: 30 minutes
+  level: 200
+  islab: true
 ---
 
 # Lab: Using PSProviders and PSDrives with PowerShell
