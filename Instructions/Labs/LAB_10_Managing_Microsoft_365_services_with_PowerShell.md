@@ -1,7 +1,13 @@
 ---
 lab:
-    title: 'Lab: Managing Microsoft 365 with PowerShell'
-    module: 'Module 10: Managing Microsoft 365 services with PowerShell'
+  title: 'Lab: Managing Microsoft 365 with PowerShell'
+  module: 'Module 10: Managing Microsoft 365 services with PowerShell'
+  description: In this exercise, you will create a new room mailbox and configure the resource booking properties to automatically accept meeting requests. You will also verify that the resource booking works as expected.
+  duration: 60 minutes
+  level: 200
+  islab: true
+  primarytopics:
+    - Microsoft 365
 ---
 
 # Lab: Managing Microsoft 365 with PowerShell
