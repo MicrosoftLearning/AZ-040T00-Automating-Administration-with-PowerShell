@@ -1,7 +1,15 @@
 ---
 lab:
-    title: 'Lab: Azure resource management with PowerShell'
-    module: 'Module 9: Managing Azure resources with PowerShell'
+  title: 'Lab: Azure resource management with PowerShell'
+  module: 'Module 9: Managing Azure resources with PowerShell'
+  description: After you create the Azure subscription and resource group, you want to use PowerShell to create an Azure VM based on a Windows Server 2019 image.
+  duration: 60 minutes
+  level: 300
+  islab: true
+  primarytopics:
+    - Azure
+    - Windows
+    - Windows Server
 ---
 
 # Lab: Azure resource management with PowerShell
