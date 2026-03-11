@@ -1,8 +1,12 @@
 ---
 lab:
-    title: 'Lab: Performing local system administration with PowerShell'
-    type: 'Answer Key'
-    module: 'Module 2: Windows PowerShell for local systems administration'
+  title: 'Lab: Performing local system administration with PowerShell'
+  type: Answer Key
+  module: 'Module 2: Windows PowerShell for local systems administration'
+  description: This lab should take approximately 60 minutes to complete.
+  duration: 60 minutes
+  level: 200
+  islab: true
 ---
 
 # Performing local system administration with PowerShell
