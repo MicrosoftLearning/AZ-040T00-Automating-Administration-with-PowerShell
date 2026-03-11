@@ -1,7 +1,11 @@
 ---
 lab:
-    title: 'Lab: Querying information by using WMI and CIM'
-    module: 'Module 5: Querying management information by using CIM and WMI'
+  title: 'Lab: Querying information by using WMI and CIM'
+  module: 'Module 5: Querying management information by using CIM and WMI'
+  description: In this exercise, you'll use WMI and CIM commands to invoke methods of repository objects.
+  duration: 45 minutes
+  level: 200
+  islab: true
 ---
 
 # Lab: Querying information by using WMI and CIM
