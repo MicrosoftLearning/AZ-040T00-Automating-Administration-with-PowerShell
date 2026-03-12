@@ -3,10 +3,14 @@ lab:
   title: 'Lab: Performing remote administration with PowerShell'
   type: Answer Key
   module: 'Module 8: Administering remote computers with Windows PowerShell'
-  description: This lab should take approximately 60 minutes to complete.
+  description: Enable and use PowerShell remoting for one to one and one to many administration. You create persistent sessions and run commands across multiple computers in parallel.
   duration: 60 minutes
   level: 300
   islab: true
+  primarytopics:
+    - PowerShell Remoting
+    - PSSession
+    - Invoke-Command
 ---
 
 # Performing remote administration with PowerShell

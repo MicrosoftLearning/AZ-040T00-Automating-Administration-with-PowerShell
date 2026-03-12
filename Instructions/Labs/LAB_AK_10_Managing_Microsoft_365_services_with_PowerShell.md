@@ -3,14 +3,16 @@ lab:
   title: 'Lab: Managing Microsoft 365 with PowerShell'
   type: Answer Key
   module: 'Module 10: Managing Microsoft 365 services with PowerShell'
-  description: The following prerequisites are required to use the Microsoft Graph PowerShell SDK with Windows PowerShell.
+  description: Manage Microsoft 365 services by using PowerShell across identity and collaboration workloads. You administer users and groups in Azure AD or Entra ID, and perform core tasks in Exchange Online, SharePoint Online, and Teams.
   duration: 60 minutes
-  level: 400
+  level: 300
   islab: true
   primarytopics:
     - Microsoft 365
-    - Microsoft Graph
-    - Windows
+    - Microsoft Entra ID
+    - Exchange Online
+    - SharePoint Online
+    - Microsoft Teams
 ---
 
 # Managing Microsoft 365 with PowerShell

@@ -3,10 +3,14 @@ lab:
   title: 'Lab A: Using PowerShell pipeline'
   type: Answer Key
   module: 'Module 3: Working with the Windows PowerShell pipeline'
-  description: This lab should take approximately 60 minutes to complete.
+  description: Use the PowerShell pipeline to select, sort, format, and filter system data for reporting. You apply both basic and advanced filtering syntax to return only relevant objects.
   duration: 60 minutes
   level: 300
   islab: true
+  primarytopics:
+    - PowerShell Pipeline
+    - Object Filtering
+    - Output Formatting
 ---
 
 # Using PowerShell pipeline

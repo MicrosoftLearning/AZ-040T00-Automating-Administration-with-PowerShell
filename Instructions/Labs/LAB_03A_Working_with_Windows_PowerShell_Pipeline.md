@@ -2,10 +2,14 @@
 lab:
   title: 'Lab A: Using PowerShell pipeline'
   module: 'Module 3: Working with the Windows PowerShell pipeline'
-  description: In this exercise, you'll use filtering to produce lists of management information that include only specified data and elements for the reports you must produce.
+  description: Use the PowerShell pipeline to select, sort, format, and filter system data for reporting. You apply both basic and advanced filtering syntax to return only relevant objects.
   duration: 60 minutes
-  level: 400
+  level: 300
   islab: true
+  primarytopics:
+    - PowerShell Pipeline
+    - Object Filtering
+    - Output Formatting
 ---
 
 # Lab: Using PowerShell pipeline

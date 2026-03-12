@@ -3,10 +3,14 @@ lab:
   title: 'Lab: Jobs management with PowerShell'
   type: Answer Key
   module: 'Module 11: Using background jobs and scheduled jobs'
-  description: This lab should take approximately 15 minutes to complete.
+  description: Create and manage PowerShell background and scheduled jobs for asynchronous automation. You monitor job execution and configure recurring tasks for repeatable administration.
   duration: 15 minutes
   level: 200
   islab: true
+  primarytopics:
+    - Background Jobs
+    - Scheduled Jobs
+    - Automation
 ---
 
 # Jobs management with PowerShell

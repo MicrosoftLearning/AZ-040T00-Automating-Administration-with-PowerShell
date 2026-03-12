@@ -2,10 +2,15 @@
 lab:
   title: 'Lab: Using variables, arrays, and hash tables in PowerShell'
   module: 'Module 6: Working with variables, arrays, and hash tables'
-  description: After using variables and arrays, you plan to practice working with hash tables. You want to learn how working with hash tables differs from arrays and array lists.
+  description: Work with PowerShell variables, arrays, and hash tables to organize script data. You compare collection behaviors and choose the right structure for each task.
   duration: 45 minutes
   level: 200
   islab: true
+  primarytopics:
+    - Variables
+    - Arrays
+    - Hash Tables
+    - PowerShell
 ---
 
 # Lab: Using variables, arrays, and hash tables in PowerShell

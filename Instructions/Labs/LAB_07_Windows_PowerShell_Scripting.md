@@ -2,10 +2,15 @@
 lab:
   title: 'Lab: Using scripts with PowerShell'
   module: 'Module 7: Windows PowerShell scripting'
-  description: You'd like to run a script that queries disk information from remote computers. To account for scenarios where the user doesn't have permission to query disk information on remote servers, you're updating the script to accept alternate credentials when specified.
+  description: Build and run PowerShell scripts that include looping, conditional logic, and CSV driven account creation. You apply code signing and execution policy concepts, then add alternate credential support for remote disk queries.
   duration: 150 minutes
-  level: 200
+  level: 300
   islab: true
+  primarytopics:
+    - PowerShell Scripting
+    - Code Signing
+    - CSV
+    - Credential Management
 ---
 
 # Lab: Using scripts with PowerShell

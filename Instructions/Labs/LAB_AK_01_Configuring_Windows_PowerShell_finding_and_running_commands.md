@@ -3,12 +3,14 @@ lab:
   title: 'Lab: Configuring Windows PowerShell, and finding and running commands'
   type: Answer Key
   module: 'Module 1: Getting Started with Windows PowerShell'
-  description: After completing this exercise, you'll have opened and configured the Windows PowerShell console application and configured its appearance and layout.
+  description: Configure the Windows PowerShell console and ISE applications for day to day administration. You discover and run commands by using Help and About topics to build foundational shell skills.
   duration: 60 minutes
-  level: 300
+  level: 200
   islab: true
   primarytopics:
-    - Windows
+    - PowerShell
+    - Command Discovery
+    - Help System
 ---
 
 # Configuring Windows PowerShell, and finding and running commands
