@@ -1,7 +1,17 @@
 ---
 lab:
-    title: 'Lab: Managing Microsoft 365 with PowerShell'
-    module: 'Module 10: Managing Microsoft 365 services with PowerShell'
+  title: 'Lab: Managing Microsoft 365 with PowerShell'
+  module: 'Module 10: Managing Microsoft 365 services with PowerShell'
+  description: Manage Microsoft 365 services by using PowerShell across identity and collaboration workloads. You administer users and groups in Azure AD or Entra ID, and perform core tasks in Exchange Online, SharePoint Online, and Teams.
+  duration: 60 minutes
+  level: 300
+  islab: true
+  primarytopics:
+    - Microsoft 365
+    - Microsoft Entra ID
+    - Exchange Online
+    - SharePoint Online
+    - Microsoft Teams
 ---
 
 # Lab: Managing Microsoft 365 with PowerShell

@@ -1,8 +1,17 @@
 ---
 lab:
-    title: 'Lab: Performing local system administration with PowerShell'
-    type: 'Answer Key'
-    module: 'Module 2: Windows PowerShell for local systems administration'
+  title: 'Lab: Performing local system administration with PowerShell'
+  type: Answer Key
+  module: 'Module 2: Windows PowerShell for local systems administration'
+  description: Create and manage Active Directory objects including organizational units, groups, and user and computer accounts. You also configure network settings and create an IIS website by using PowerShell.
+  duration: 60 minutes
+  level: 200
+  islab: true
+  primarytopics:
+    - Active Directory
+    - Networking
+    - IIS
+    - PowerShell
 ---
 
 # Performing local system administration with PowerShell

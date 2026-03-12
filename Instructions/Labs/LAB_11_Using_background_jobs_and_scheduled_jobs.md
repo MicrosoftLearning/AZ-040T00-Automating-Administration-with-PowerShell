@@ -1,7 +1,15 @@
 ---
 lab:
-    title: 'Lab: Jobs management with PowerShell'
-    module: 'Module 11: Using background jobs and scheduled jobs'
+  title: 'Lab: Jobs management with PowerShell'
+  module: 'Module 11: Using background jobs and scheduled jobs'
+  description: Create and manage PowerShell background and scheduled jobs for asynchronous automation. You monitor job execution and configure recurring tasks for repeatable administration.
+  duration: 15 minutes
+  level: 200
+  islab: true
+  primarytopics:
+    - Background Jobs
+    - Scheduled Jobs
+    - Automation
 ---
 
 # Lab: Jobs management with PowerShell

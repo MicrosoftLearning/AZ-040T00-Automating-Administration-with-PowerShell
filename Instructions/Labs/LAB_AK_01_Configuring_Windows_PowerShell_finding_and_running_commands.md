@@ -1,8 +1,16 @@
 ---
 lab:
-    title: 'Lab: Configuring Windows PowerShell, and finding and running commands'
-    type: 'Answer Key'
-    module: 'Module 1: Getting Started with Windows PowerShell'
+  title: 'Lab: Configuring Windows PowerShell, and finding and running commands'
+  type: Answer Key
+  module: 'Module 1: Getting Started with Windows PowerShell'
+  description: Configure the Windows PowerShell console and ISE applications for day to day administration. You discover and run commands by using Help and About topics to build foundational shell skills.
+  duration: 60 minutes
+  level: 200
+  islab: true
+  primarytopics:
+    - PowerShell
+    - Command Discovery
+    - Help System
 ---
 
 # Configuring Windows PowerShell, and finding and running commands

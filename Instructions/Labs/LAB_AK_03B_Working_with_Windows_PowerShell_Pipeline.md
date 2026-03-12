@@ -1,8 +1,16 @@
 ---
 lab:
-    title: 'Lab: Using PowerShell pipeline'
-    type: 'Answer Key'
-    module: 'Module 3: Working with the Windows PowerShell pipeline'
+  title: 'Lab: Using PowerShell pipeline'
+  type: Answer Key
+  module: 'Module 3: Working with the Windows PowerShell pipeline'
+  description: Use enumeration techniques to manipulate multiple objects in the pipeline. You choose when to enumerate, convert object output formats, and update data across many records.
+  duration: 60 minutes
+  level: 300
+  islab: true
+  primarytopics:
+    - PowerShell Pipeline
+    - Enumeration
+    - Object Conversion
 ---
 
 # Using PowerShell pipeline

@@ -1,7 +1,16 @@
 ---
 lab:
-    title: 'Lab: Azure resource management with PowerShell'
-    module: 'Module 9: Managing Azure resources with PowerShell'
+  title: 'Lab: Azure resource management with PowerShell'
+  module: 'Module 9: Managing Azure resources with PowerShell'
+  description: Use the Az module and Azure Cloud Shell to administer Azure resources with PowerShell. You create and manage resource groups, virtual machines, and disks, then remove deployed resources.
+  duration: 60 minutes
+  level: 300
+  islab: true
+  primarytopics:
+    - Azure
+    - Az Module
+    - Virtual Machines
+    - Cloud Shell
 ---
 
 # Lab: Azure resource management with PowerShell

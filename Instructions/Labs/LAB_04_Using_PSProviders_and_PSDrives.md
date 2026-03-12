@@ -1,7 +1,16 @@
 ---
 lab:
-    title: 'Lab: Using PSProviders and PSDrives with PowerShell'
-    module: 'Module 4: Using PSProviders and PSDrives'
+  title: 'Lab: Using PSProviders and PSDrives with PowerShell'
+  module: 'Module 4: Using PSProviders and PSDrives'
+  description: Use PSProviders and PSDrives to work with the file system, registry, and Active Directory. You create provider backed paths, store script configuration in the registry, and verify object access through provider navigation.
+  duration: 30 minutes
+  level: 200
+  islab: true
+  primarytopics:
+    - PSProviders
+    - PSDrives
+    - Registry
+    - Active Directory
 ---
 
 # Lab: Using PSProviders and PSDrives with PowerShell

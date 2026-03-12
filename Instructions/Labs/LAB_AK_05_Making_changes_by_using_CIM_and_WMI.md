@@ -1,8 +1,16 @@
 ---
 lab:
-    title: 'Lab: Querying information by using WMI and CIM'
-    type: 'Answer Key'
-    module: 'Module 5: Querying management information by using CIM and WMI'
+  title: 'Lab: Querying information by using WMI and CIM'
+  type: Answer Key
+  module: 'Module 5: Querying management information by using CIM and WMI'
+  description: Query system information by using both WMI and CIM cmdlets. You discover relevant classes, filter results, and invoke repository methods for administrative tasks.
+  duration: 45 minutes
+  level: 200
+  islab: true
+  primarytopics:
+    - WMI
+    - CIM
+    - PowerShell
 ---
 
 # Querying information by using WMI and CIM

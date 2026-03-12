@@ -1,8 +1,17 @@
 ---
 lab:
-    title: 'Lab: Using scripts with PowerShell'
-    type: 'Answer Key'
-    module: 'Module 4: Windows PowerShell scripting'
+  title: 'Lab: Using scripts with PowerShell'
+  type: Answer Key
+  module: 'Module 7: Windows PowerShell scripting'
+  description: Build and run PowerShell scripts that include looping, conditional logic, and CSV driven account creation. You apply code signing and execution policy concepts, then add alternate credential support for remote disk queries.
+  duration: 150 minutes
+  level: 300
+  islab: true
+  primarytopics:
+    - PowerShell Scripting
+    - Code Signing
+    - CSV
+    - Credential Management
 ---
 
 # Using scripts with PowerShell
