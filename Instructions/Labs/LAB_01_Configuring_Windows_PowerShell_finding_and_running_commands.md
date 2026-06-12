@@ -94,6 +94,8 @@ After completing this exercise, you'll have opened and configured the Windows Po
 
 ## Exercise 2: Configuring the Windows PowerShell ISE application
 
+> **Note:** The Windows PowerShell ISE is available only for Windows PowerShell 5.1. It is no longer in active feature development and is not supported in PowerShell 7. Microsoft recommends **Visual Studio Code with the PowerShell extension** as the modern scripting environment. This exercise uses the ISE because it remains available on Windows 10/11 systems running Windows PowerShell 5.1.
+
 ### Exercise scenario 2
 
 In this exercise, you'll customize the appearance of the Windows PowerShell ISE application.
@@ -160,6 +162,8 @@ The main tasks for this exercise are:
 5. Test the network connection to **LON-DC1**. Your command should return only a True or False value, without any other output.
 
 6. Display the newest 10 entries from the local Security event log.
+
+   > **Note:** The `Get-EventLog` cmdlet is only available in Windows PowerShell 5.1. In PowerShell 7, use `Get-WinEvent` with the `-MaxEvents` parameter instead of `-Newest`.
 
 ### Exercise 3 results
 

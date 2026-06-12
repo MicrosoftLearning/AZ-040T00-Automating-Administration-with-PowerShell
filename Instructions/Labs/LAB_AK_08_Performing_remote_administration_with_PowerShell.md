@@ -17,7 +17,45 @@ lab:
 
 This lab should take approximately **60** minutes to complete.
 
+## Scenario
+
+You're an administrator for Adatum Corporation and must perform maintenance tasks on a server running Windows Server 2019. You don't have physical access to the server, and instead plan to perform the tasks using Windows PowerShell remoting. You also have some tasks to perform on both a server and another client computer that runs Windows 10. In your environment, communication protocols such as remote procedure call (RPC) are blocked between your local computer and the servers. You plan to use Windows PowerShell remoting, and want to use sessions to provide persistence and reduce the setup and cleanup overhead that improvised remoting connections will impose.
+
+## Objectives
+
+After completing this lab, you'll be able to:
+
+- Enable remoting on a client computer.
+- Run a task on a remote computer by using one-to-one remoting.
+- Run a task on two computers by using one-to-many remoting.
+- Create and manage PSSessions.
+- Send commands to multiple computers in parallel.
+
+## Lab Setup
+
+Virtual machines:
+
+- **LON-DC1**
+- **LON-CL1**
+
+Username: **Adatum\\Administrator**
+
+Password: **Pa55w.rd**
+
+For this lab, you'll use the available virtual machine environment. Before you begin the lab, complete the following steps:
+
+1. Open **LON-DC1**, and then sign in as **Administrator** with the password **Pa55w.rd**.
+1. Repeat step 1 for **LON-CL1**.
+
 ## Exercise 1: Enabling remoting on the local computer
+
+### Scenario 1
+
+In this exercise, you'll enable remoting on the client computer.
+
+The main task for this exercise is:
+
+- Enable remoting for incoming connections.
 
 ### Task 1: Enable remoting for incoming connections
 
@@ -60,6 +98,16 @@ This lab should take approximately **60** minutes to complete.
 1. Verify that two to four session configurations were created. Leave the Windows PowerShell window open.
 
 ## Exercise 2: Performing one-to-one remoting
+
+### Scenario 2
+
+In this exercise, you'll connect to a remote computer and perform maintenance tasks.
+
+The main tasks for this exercise are:
+
+1. Connect to the remote computer and install an operating system feature on it.
+1. Test multi-hop remoting.
+1. Observe remoting limitations.
 
 ### Task 1: Connect to the remote computer and install an operating system feature on it
 
@@ -131,6 +179,13 @@ This lab should take approximately **60** minutes to complete.
 
 ## Exercise 3: Performing one-to-many remoting
 
+In this exercise, you'll run commands against multiple computers. One of those will be the client computer, although you'll be establishing a second sign-in to it for the duration of each command.
+
+The main tasks for this exercise are:
+
+1. Retrieve a list of physical network adapters from two computers.
+1. Compare the output of a local command to that of a remote command.
+
 ### Task 1: Retrieve a list of physical network adapters from two computers
 
 1. Ensure that you're still signed in to the **LON-CL1** virtual machine as **Adatum\\Administrator** with the password **Pa55w.rd**.
@@ -173,6 +228,14 @@ This lab should take approximately **60** minutes to complete.
    > **Note:** The second set of results only includes two **MemberType** of **Methods; GetType**, and **ToString**. This is because the remote value **TypeName** is deserialized in comparison to the local output.
 
 ## Exercise 4: Using implicit remoting
+
+In this exercise, you'll use implicit remoting to import and run commands from a remote computer.
+
+The main tasks for this exercise are as follows:
+
+1. Create a persistent remoting connection to a server.
+1. Import and use a module from a server.
+1. Close all open remoting connections.
 
 ### Task 1: Create a persistent remoting connection to a server
 
@@ -247,6 +310,15 @@ This lab should take approximately **60** minutes to complete.
 
 ## Exercise 5: Managing multiple computers
 
+In this exercise, you'll perform several management tasks against multiple computers, relying on PSSessions to provide persistence.
+
+The main tasks for this exercise are:
+
+1. Create PSSessions to two computers.
+1. Create a report that displays Windows Firewall rules from two computers.
+1. Create and display an HTML report that displays local disk information from two computers.
+1. Close all open PSSessions.
+
 ### Task 1: Create PSSessions to two computers
 
 1. Ensure that you're still signed in to **LON-CL1** as **Adatum\\Administrator** with the password **Pa55w.rd**.
@@ -317,21 +389,23 @@ This lab should take approximately **60** minutes to complete.
 1. To display a list of local hard drives filtered to include only those with a drive type of **3**, enter the following command, and then press the Enter key:
 
    ```powershell
-   Get-WmiObject –Class Win32_LogicalDisk –Filter "DriveType=3"
+   Get-CimInstance –ClassName Win32_LogicalDisk –Filter "DriveType=3"
    ```
+
+   > **Note:** `Get-CimInstance` replaces the deprecated `Get-WmiObject` cmdlet. Use `-ClassName` instead of `-Class`.
 
 1. To run the same command on **LON-DC1** and **LON-CL1** by means of remoting, enter the following command, and then press the Enter key:
 
    ```powershell
-   Invoke-Command –Session $computers –ScriptBlock { Get-WmiObject –Class Win32_LogicalDisk –Filter "DriveType=3" }
+   Invoke-Command –Session $computers –ScriptBlock { Get-CimInstance –ClassName Win32_LogicalDisk –Filter "DriveType=3" }
    ```
 
-   > **Note:** Your report must include each computer’s name, each drive’s letter, and each drive’s free space and total size in bytes.
+   > **Note:** Your report must include each computer's name, each drive's letter, and each drive's free space and total size in bytes.
 
 1. To produce an HTML report containing the results of the previous command, enter the following command, and then press the Enter key:
 
    ```powershell
-   Invoke-Command –Session $computers –ScriptBlock { Get-WmiObject –Class Win32_LogicalDisk –Filter "DriveType=3" } | ConvertTo-Html –Property PSComputerName,DeviceID,FreeSpace,Size
+   Invoke-Command –Session $computers –ScriptBlock { Get-CimInstance –ClassName Win32_LogicalDisk –Filter "DriveType=3" } | ConvertTo-Html –Property PSComputerName,DeviceID,FreeSpace,Size
    ```
 
 ### Task 4: Close all open PSSessions

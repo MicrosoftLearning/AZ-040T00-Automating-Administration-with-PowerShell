@@ -17,7 +17,50 @@ lab:
 
 This lab should take approximately **60** minutes to complete.
 
+## Scenario
+
+You're an administrator who'll use Windows PowerShell to automate many administrative tasks. You must ensure that you can successfully start the correct Windows PowerShell host applications and configure them for future use by customizing their appearance.
+
+You're also preparing to complete several administrative tasks by using Windows PowerShell. You need to discover commands that you'll use to perform those tasks, run several commands to begin performing those tasks, and learn about new Windows PowerShell features that'll enable you to complete those tasks.
+
+## Objectives
+
+After completing this lab, you'll be able to:
+
+- Open and configure the Windows PowerShell console application.
+- Open and configure the Windows PowerShell ISE application.
+- Find and run Windows PowerShell commands.
+- Use Windows PowerShell Help and About topics to learn new shell concepts and techniques.
+
+## Lab setup
+
+Virtual machines: **AZ-040T00A-LON-DC1** and **AZ-040T00A-LON-CL1**
+
+User name: **Adatum\\Administrator**
+
+Password: **Pa55w.rd**
+
+## Lab startup
+
+1. Select **LON-DC1**.
+1. Sign in by using the following credentials:
+   - User name: **Administrator**
+   - Password: **Pa55w.rd**
+   - Domain: **Adatum**
+
+1. Repeat these steps for **LON-CL1**.
+
 ## Exercise 1: Configuring the Windows PowerShell console application
+
+### Exercise scenario 1
+
+To customize Windows PowerShell, you need to first make changes to the console. In this exercise, you'll open the Windows PowerShell console application and configure its appearance and layout.
+
+The main tasks for this exercise are:
+
+1. Start the console application as Administrator, and pin the Windows PowerShell icon to the taskbar.
+1. Configure the Windows PowerShell console application.
+1. Start a shell transcript.
 
 ### Task 1: Start the console application as Administrator, and pin the Windows PowerShell icon to the taskbar
 
@@ -67,6 +110,17 @@ After completing this exercise, you'll have opened and configured the Windows Po
 
 ## Exercise 2: Configuring the Windows PowerShell ISE application
 
+> **Note:** The Windows PowerShell ISE is available only for Windows PowerShell 5.1. It is no longer in active feature development and is not supported in PowerShell 7. Microsoft recommends **Visual Studio Code with the PowerShell extension** as the modern scripting environment. This exercise uses the ISE because it remains available on Windows 10/11 systems running Windows PowerShell 5.1.
+
+### Exercise scenario 2
+
+In this exercise, you'll customize the appearance of the Windows PowerShell ISE application.
+
+The main tasks for this exercise are:
+
+1. Open the Windows PowerShell ISE application as Administrator.
+1. Customize the ISE's appearance to use a single-pane view, hide the **Command** pane, and adjust the font size.
+
 ### Task 1: Open the Windows PowerShell ISE application as Administrator
 
 1. In the **Windows PowerShell console**, enter **ise**, and then press the Enter key.
@@ -100,6 +154,15 @@ After completing this exercise, you'll have opened and configured the Windows Po
 After completing this exercise, you'll have customized the appearance of the Windows PowerShell Integrated Scripting Environment (ISE) application.
 
 ## Exercise 3: Finding and running Windows PowerShell commands
+
+### Exercise scenario 3
+
+In this exercise, you'll use Windows PowerShell's **Get-Help** and **Get-Command** commands to discover new commands that can complete specific tasks within Windows PowerShell. You'll also run several basic Windows PowerShell commands. In some instances, you might have to find the commands that you'll use to complete the task.
+
+The main tasks for this exercise are:
+
+1. Find commands that'll accomplish specified tasks.
+1. Run commands to accomplish specified tasks.
 
 ### Task 1: Find commands that'll accomplish specified tasks
 
@@ -317,11 +380,23 @@ After completing this exercise, you'll have customized the appearance of the Win
    Get-EventLog –LogName Security –Newest 10 
    ```
 
+   > **Note:** In PowerShell 7, use `Get-WinEvent –LogName Security –MaxEvents 10` instead. The `Get-EventLog` cmdlet is only available in Windows PowerShell 5.1.
+
 ### Exercise 3 results
 
 After completing this exercise, you'll have demonstrated your ability to find and run Windows PowerShell commands that perform specific tasks.
 
 ## Exercise 4: Using About files
+
+### Exercise scenario 4
+
+In this exercise, you'll use help discovery techniques to find content in **About** files, and then use that content to answer questions about global Windows PowerShell functionality.
+
+Remember that you must use **Get-Help** and wildcard characters. **About** files aren't commands, **Get-Command** will not be useful in this exercise.
+
+The main task for this exercise is:
+
+- Locate and review **About** help files.
 
 ### Task 1: Locate and review About help files
 

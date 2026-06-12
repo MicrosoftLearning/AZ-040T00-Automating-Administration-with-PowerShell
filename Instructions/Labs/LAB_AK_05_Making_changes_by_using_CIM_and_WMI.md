@@ -17,7 +17,45 @@ lab:
 
 This lab should take approximately **45** minutes to complete.
 
+## Scenario
+
+You have to query management information from several computers. You start by querying the information from your local computer and from one test computer in your environment.
+
+## Objectives
+
+After completing this lab, you'll be able to:
+
+- Query information by using Windows Management Instrumentation (WMI) commands.
+- Query information by using Common Information Model (CIM) commands.
+- Invoke methods by using WMI and CIM commands.
+
+## Lab setup
+
+Virtual machines: **AZ-040T00A-LON-DC1** and **AZ-040T00A-LON-CL1**
+
+Username: **Adatum\\Administrator**
+
+Password: **Pa55w.rd**
+
+For this lab, you'll use the available virtual machine environment. Before you begin the lab, complete the following steps:
+
+1. Open **LON-DC1** and sign in as **Adatum\\Administrator** with the password **Pa55w.rd**.
+1. Repeat step 1 for **LON-CL1**.
+
 ## Exercise 1: Querying information by using WMI
+
+> **Note:** The `Get-WmiObject` cmdlet is only available in Windows PowerShell 5.1. In PowerShell 7, use `Get-CimInstance` instead (as shown in Exercise 2). Ensure you run this exercise in a **Windows PowerShell** console.
+
+### Scenario 1
+
+In this exercise, you'll discover repository classes and then use WMI commands to query them.
+
+The main tasks for this exercise are as follows:
+
+1. Query IP addresses.
+1. Query operating system version information.
+1. Query computer system hardware information.
+1. Query service information.
 
 ### Task 1: Query IP addresses
 
@@ -116,6 +154,17 @@ This lab should take approximately **45** minutes to complete.
 
 ## Exercise 2: Querying information by using CIM
 
+### Scenario 2
+
+In this exercise, you'll discover new repository classes and query them by using CIM commands.
+
+The main tasks for this exercise are as follows:
+
+1. Query user accounts.
+1. Query BIOS information.
+1. Query network adapter configuration information.
+1. Query user group information.
+
 ### Task 1: Query user accounts
 
 1. To find a repository class that lists user accounts, enter the following command in the **Windows PowerShell** console, and then press the Enter key:
@@ -190,6 +239,15 @@ This lab should take approximately **45** minutes to complete.
 
 ## Exercise 3: Invoking methods
 
+### Scenario 3
+
+In this exercise, you'll use WMI and CIM commands to invoke methods of repository objects.
+
+The main tasks for this exercise are as follows:
+
+1. Invoke a CIM method.
+1. Invoke a WMI method.
+
 ### Task 1: Invoke a CIM method
 
 1. To restart **LON-DC1**, enter the following command in the **Windows PowerShell** console, and then press the Enter key:
@@ -203,6 +261,8 @@ This lab should take approximately **45** minutes to complete.
 
 ### Task 2: Invoke a WMI method
 
+> **Note:** `Get-WmiObject` and `Invoke-WmiMethod` are only available in Windows PowerShell 5.1. In PowerShell 7, use CIM cmdlets: `Get-CimInstance -ClassName Win32_Service -Filter "Name='WinRM'" | Invoke-CimMethod -MethodName ChangeStartMode -Arguments @{StartMode='Automatic'}`.
+
 1. To review properties of the WinRM service, enter the following command in the **Windows PowerShell** console, and then press the Enter key:
     
     ```powershell
@@ -212,7 +272,7 @@ This lab should take approximately **45** minutes to complete.
 1. To change the start mode of the specified service, enter the following command in the **Windows PowerShell** console, and then press the Enter key:
     
     ```powershell
-    Get-WmiObject -Class Win32_Service -Filter "Name='WinRM'" | Invoke-WmiMethod -Name ChangeStartMode -Argument 'Automatic'
+    Get-WmiObject -Class Win32_Service -Filter "Name='WinRM'" | Invoke-WmiMethod -Name ChangeStartMode -ArgumentList 'Automatic'
     ```
 1. To verify that the StartType of the WinRM service has changed, enter the following command in the **Windows PowerShell** console, and then press the Enter key:
    

@@ -1,5 +1,7 @@
-﻿# Open this file in the ISE. Highlight one line and press F8 to
-# execute just that line. 
+﻿# Open this file in the ISE or VS Code. Highlight one line and press F8 to
+# execute just that line.
+# NOTE: Get-WmiObject (steps 1-2) is only available in Windows PowerShell 5.1.
+# In PowerShell 7, use Get-CimInstance and Get-CimClass instead.
 
 # 1
 Get-WmiObject –ClassName Win32_Service | Get-Member #and explain that the Change() method is one member of the class.

@@ -26,7 +26,7 @@ You've created a new Microsoft 365 tenant. As a new administrator, you want to t
 
 After completing this lab, you'll be able to:
 
-- Manage users in Azure AD.
+- Manage users in Microsoft Entra ID.
 - Manage Exchange Online.
 - Manage SharePoint Online.
 - Manage Microsoft Teams.
@@ -46,7 +46,7 @@ For this lab, you'll use the available virtual machine environment. Before you b
 
 > **Note**: This lab requires an Office 365 tenant and a user with Global Administrator permissions in that tenant.
 
-## Exercise 1: Managing users and groups in Azure AD
+## Exercise 1: Managing users and groups in Microsoft Entra ID
 
 ### Exercise scenario 1
 
@@ -54,53 +54,53 @@ You need to make sure that you understand how to create and manage users. You're
 
 The main tasks for this exercise are:
 
-1. Connect to Azure AD.
+1. Connect to Microsoft Entra ID.
 1. Create a new administrative user.
 1. Create and license a new user.
 
-### Task 1: Connect to Azure AD
+### Task 1: Connect to Microsoft Entra ID
 
 1. On **LON-CL1**, open Windows PowerShell as an administrator.
-1. Install the module that allows you to manage Azure AD.
-1. Connect to Azure AD and sign in using your admin user account.
-1. To verify that you're connected, review a list of users in Azure AD.
+1. Set the execution policy to **RemoteSigned** for the current user.
+1. Install the **Microsoft.Graph** module for the current user.
+1. Connect to Microsoft Graph with the required scopes (User.ReadWrite.All, Directory.ReadWrite.All, Group.ReadWrite.All, RoleManagement.ReadWrite.Directory) and sign in using your admin user account.
+1. To verify that you're connected, review a list of users in Microsoft Entra ID.
 
 ### Task 2: Create a new administrative user
 
-1. Create a new **PasswordProfile** object in a variable, and then populate the **password** property.
+1. Create a **PasswordProfile** hashtable with a password and `ForceChangePasswordNextSignIn` set to `$true`.
 1. Note the password so that you don't forget it.
-1. Identify the name of your verified Azure AD domain and store it in a variable named $verifiedDomain.
-1. Create a new user object using the **PasswordProfile** object with the following attributes:
+1. Identify the name of your verified Microsoft Entra ID domain and store it in a variable named $verifiedDomain.
+1. Create a new user using **New-MgUser** with the following attributes:
    - Display name: **Noreen Riggs**
    - User principal name: **Noreen@$verifiedDomain**
    - Account enabled
    - MailNickName: **Noreen**
-1. Assign the Global Administrator role to the **Noreen Riggs** user account.
-1. Use the **Get-AzureADDirectoryRoleMember** cmdlet to verify that the Global Administrator role was assigned to the **Noreen Riggs** user account.
+1. Assign the Global Administrator role to the **Noreen Riggs** user account using **New-MgDirectoryRoleMemberByRef**.
+1. Use the **Get-MgDirectoryRoleMember** cmdlet to verify that the Global Administrator role was assigned to the **Noreen Riggs** user account.
 
 ### Task 3: Create and license a new user
 
-1. Create a new user object by using the **PasswordProfile** object with the following attributes:
+1. Create a new user using **New-MgUser** with the following attributes:
    - Display name: **Allan Yoo**
    - User principal name: **Allan@$verifiedDomain**
    - Account enabled
    - MailNickName: **Allan**
-1. Set the usage location for Allan Yoo to **US**.
-1. List the licenses SKUs available in your tenant.
-1. Create an **AssignedLicense** object, and then configure the **SkuId** property with the *SkuID* value from the **Office_365_E5_(no_Teams)** license in your tenant.
-1. Create an **AssignedLicenses** object, and then place the **AssignedLicense** object in the **AddLicenses** property.
-1. Use the **AssignedLicenses** object to assign a license to Allan Yoo.
+1. Set the usage location for Allan Yoo to **US** using **Update-MgUser**.
+1. List the subscribed SKUs available in your tenant using **Get-MgSubscribedSku**.
+1. Store the SKU ID for the **Office_365_E5_(no_Teams)** license in a variable.
+1. Use **Set-MgUserLicense** to assign the license to Allan Yoo.
 
 ### Task 4: Create and populate a group
 
-1. List the groups in Azure AD.
-1. Create a new group object in Azure AD with the following attributes:
+1. List the groups in Microsoft Entra ID using **Get-MgGroup**.
+1. Create a new group using **New-MgGroup** with the following attributes:
    - Display name: **Sales Security Group**
    - Security enabled: `$true`
    - Mail enabled: `$false`
    - Mail nickname: **SalesSecurityGroup**
-1. Add Allan Yoo's user object as a member of Sales Security Group.
-1. Query the Sales Security Group membership to verify that Allan Yoo's user object is its member.
+1. Add Allan Yoo's user object as a member of Sales Security Group using **New-MgGroupMember**.
+1. Query the Sales Security Group membership using **Get-MgGroupMember** to verify that Allan Yoo's user object is its member.
 1. Keep the **Windows PowerShell** window open.
 
 ## Exercise 2: Managing Exchange Online
@@ -117,9 +117,9 @@ The main tasks for this exercise are:
 
 ### Task 1: Connect to Exchange Online
 
-1. On **LON-CL1**, in the same **Windows PowerShell** window, install the module that allows you to manage Exchange Online.
-1. Connect to Exchange Online and sign in using your admin user account.
-1. To verify that you're connected, review a list of mailboxes in Exchange Online.
+1. On **LON-CL1**, in the same **Windows PowerShell** window, install the **ExchangeOnlineManagement** module.
+1. Connect to Exchange Online using **Connect-ExchangeOnline** and sign in using your admin user account.
+1. To verify that you're connected, review a list of mailboxes in Exchange Online using **Get-EXOMailbox**.
 
 ### Task 2: Create a room mailbox
 

@@ -1,5 +1,7 @@
-﻿# Open this file in the ISE. Highlight one line and press F8 to
+﻿# Open this file in the ISE or VS Code. Highlight one line and press F8 to
 # execute just that line.
+# NOTE: Get-EventLog (used below) is only available in Windows PowerShell 5.1.
+# In PowerShell 7, use Get-WinEvent -LogName Security -MaxEvents 100 instead.
 
 # Enable remoting
 Enable-PSRemoting 

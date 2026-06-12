@@ -175,8 +175,10 @@ The main tasks for this exercise are:
 
 ### Task 3: Create and display an HTML report that displays local disk information from two computers
 
-1. As a test, use **Get-WmiObject** to display a list of local hard drives (the **Win32_LogicalDisk** class, filtered to include only those drives with a drive type of **3**).
-1. Use remoting to run the **Get-WmiObject** command against both **LON-DC1** and **LON-CL1**. Don't add a **–ComputerName** parameter to the **Get-WmiObject** command.
+1. As a test, use **Get-CimInstance** to display a list of local hard drives (the **Win32_LogicalDisk** class, filtered to include only those drives with a drive type of **3**).
+1. Use remoting to run the **Get-CimInstance** command against both **LON-DC1** and **LON-CL1**. Don't add a **–ComputerName** parameter to the **Get-CimInstance** command.
+
+   > **Note:** `Get-CimInstance` replaces the deprecated `Get-WmiObject` cmdlet. Use `-ClassName` instead of `-Class`.
 
    > **Note:** Your report must include each computer’s name, each drive’s letter, and its free space and total size in bytes.
 
