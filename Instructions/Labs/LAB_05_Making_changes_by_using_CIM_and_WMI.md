@@ -43,6 +43,8 @@ For this lab, you'll use the available virtual machine environment. Before you b
 
 ## Exercise 1: Querying information by using WMI
 
+> **Note:** The `Get-WmiObject` cmdlet used in this exercise is only available in Windows PowerShell 5.1. It has been superseded by `Get-CimInstance` (used in Exercise 2), which works in both Windows PowerShell 5.1 and PowerShell 7. This exercise must be run in a Windows PowerShell 5.1 console.
+
 ### Scenario 1
 
 In this exercise, you'll discover repository classes and then use WMI commands to query them.
@@ -129,6 +131,8 @@ The main tasks for this exercise are as follows:
 - Using a CIM command and the `Reboot` method of `Win32_OperatingSystem`, restart **LON-DC1** remotely from **LON-CL1**.
 
 ### Task 2: Invoke a WMI method
+
+> **Note:** The `Invoke-WmiMethod` cmdlet is only available in Windows PowerShell 5.1. In PowerShell 7, use `Invoke-CimMethod` instead.
 
 1. Use the `Get-Service` cmdlet to review the **StartType** property of the **WinRM** service.
 1. Using WMI commands and the `ChangeStartMode` method of `Win32_Service`, change the start mode of the **WinRM** service to **Automatic**.

@@ -18,7 +18,41 @@ lab:
 
 This lab should take approximately **60** minutes to complete.
 
+## Scenario
+
+You're a system administrator for the London branch office of Adatum Corporation. You need to evaluate the Microsoft Azure platform to run virtual machines (VMs) and other resources for your company. As part of your evaluation, you also want to test PowerShell administration of Azure-based resources.
+
+## Objectives
+
+After completing this lab, you'll be able to:
+
+- Install the Az module for Windows PowerShell.
+- Run and use the Azure Cloud Shell environment.
+- Manage Azure VMs and disks by using PowerShell.
+
+## Lab setup
+
+Virtual machines: **LON-DC1** and **LON-CL1**
+
+Username: **Adatum\\Administrator**
+
+Password: **Pa55w.rd**
+
+For this lab, you'll use the available virtual machine environment. Before you begin the lab, complete the following steps:
+
+1. Open **LON-DC1** and sign in as **Adatum\\Administrator** with the password **Pa55w.rd**.
+1. Repeat step 1 for **LON-CL1**.
+
 ## Exercise 1: Activating the Azure subscription and installing the PowerShell Az module
+
+### Scenario 1
+
+You need to sign in to the Azure subscription provided in your environment and install the Az module for Windows PowerShell.
+
+The main tasks for this exercise are:
+
+1. Sign in to the Azure subscription.
+1. Install the Azure Az module for PowerShell.
 
 #### Task 1: Open the Azure portal
 
@@ -80,6 +114,14 @@ This lab should take approximately **60** minutes to complete.
 
 ## Exercise 2: Using Azure Cloud Shell
 
+### Scenario 2
+
+To work with other Azure resources such as Azure VMs, you need to create an Azure resource group. You decide to use Azure Cloud Shell to perform this task.
+
+The main task for this exercise is:
+
+- Use Azure Cloud Shell to create a resource group.
+
 ### Task 1: Use Azure Cloud Shell to create a resource group
 
 1. On the **LON-CL1** computer, switch to the web browser window displaying the Azure portal.
@@ -118,6 +160,14 @@ This lab should take approximately **60** minutes to complete.
 
 ## Exercise 3: Managing Azure resources with Azure PowerShell
 
+After you create the Azure subscription and resource group, you want to use PowerShell to create an Azure VM based on a Windows Server 2022 image.
+
+The main tasks for this exercise are as follows:
+
+1. Create an Azure VM by using PowerShell.
+1. Add a disk to Azure VM by using PowerShell.
+1. Delete the Azure resources.
+
 ### Task 1: Create an Azure VM by using PowerShell
 
 1. In the PowerShell window, enter the following command to provide the admin credentials for the operating system of the Azure VM you will create in this exercise:
@@ -135,7 +185,7 @@ This lab should take approximately **60** minutes to complete.
      ResourceGroupName = '<resource-group-name>'
      Name = 'TestVM1'
      Location = 'westeurope'
-     ImageName = 'Win2019Datacenter'
+     ImageName = 'Win2022Datacenter'
      PublicIpAddressName = 'TestPublicIp'
      Credential = $cred
      OpenPorts = 3389
@@ -182,7 +232,7 @@ This lab should take approximately **60** minutes to complete.
    mstsc.exe /v $publicIp.IpAddress
    ```
 
-1. When prompted, sign in with the admin credentials you provided during the Azure VM provisioning. Ensure that you're connected to the Windows Server 2019 VM and then shut down the operating system. This will automatically terminate your Remote Desktop session.
+1. When prompted, sign in with the admin credentials you provided during the Azure VM provisioning. Ensure that you're connected to the Windows Server 2022 VM and then shut down the operating system. This will automatically terminate your Remote Desktop session.
 
 ### Task 2: Add a disk to the Azure VM by using PowerShell
 

@@ -60,7 +60,7 @@ The main tasks for this exercise are:
 
 ### Task 2: Install the Azure Az module for PowerShell
 
-1. On **LON-CL1**, start the PowerShell 7.1 environment.
+1. On **LON-CL1**, start the PowerShell 7 environment.
 1. Check your version of PowerShell by using `$PSVersionTable.PSVersion`.
 1. Set the execution policy to **RemoteSigned** for the current user.
 1. From the PowerShell Gallery, install the Az module for the current user by using the **Install-Module** command.
@@ -97,15 +97,15 @@ The main tasks for this exercise are as follows:
 
 ### Task 1: Create an Azure VM by using PowerShell
 
-1. In the PowerShell 7.1 window, use the **Get-Credential** command to store admin credentials for the new Azure VM in the `$cred` variable. Do not use **Admin** or **Administrator** as the username and choose a complex, at least 8 character-long password that includes lower case letters, upper case letters, digits, and at least one special character.
-1. In the PowerShell 7.1 window, use the following command to define the VM parameters (replace the `<resource-group-name>` placeholder with the name of the resource group you created in the previous exercise):
+1. In the PowerShell 7 window, use the **Get-Credential** command to store admin credentials for the new Azure VM in the `$cred` variable. Do not use **Admin** or **Administrator** as the username and choose a complex, at least 8 character-long password that includes lower case letters, upper case letters, digits, and at least one special character.
+1. In the PowerShell 7 window, use the following command to define the VM parameters (replace the `<resource-group-name>` placeholder with the name of the resource group you created in the previous exercise):
 
    ```powershell
    $vmParams = @{
      ResourceGroupName = '<resource-group-name>'
      Name = 'TestVM1'
      Location = 'westeurope'
-     ImageName = 'Win2019Datacenter'
+     ImageName = 'Win2022Datacenter'
      PublicIpAddressName = 'TestPublicIp'
      Credential = $cred
      OpenPorts = 3389

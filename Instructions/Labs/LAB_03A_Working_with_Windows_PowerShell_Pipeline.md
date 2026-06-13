@@ -135,6 +135,8 @@ The main tasks for this exercise are:
 
 ### Task 2: Create a report displaying the Security event log entries that have the event ID 4624
 
+> **Note:** In Windows PowerShell 5.1, use `Get-EventLog` for this task. In PowerShell 7, use `Get-WinEvent` instead — it uses the `Id` property rather than `EventID`, and `TimeCreated` rather than `TimeWritten`.
+
 1. Display only the total number of **Security** event log entries that have the event ID **4624**.
 1. Display the full list of the **Security** event log entries that have the event ID **4624**, and display only the time written, event ID, and message.
 1. Display only the 10 oldest entries in a format that lets you review the message details.

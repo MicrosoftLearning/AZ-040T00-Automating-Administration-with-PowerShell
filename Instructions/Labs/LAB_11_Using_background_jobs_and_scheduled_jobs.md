@@ -66,6 +66,9 @@ The main tasks for this exercise are:
 ### Task 2: Start a local job
 
 1. Start a local job that retrieves all entries from the **Security** event log. Name the job **LocalSecurity**.
+
+   > **Note:** This task uses `Get-EventLog`, which is only available in Windows PowerShell 5.1. In PowerShell 7, use `Get-WinEvent -LogName Security` instead.
+
 1. Using the range operator (**..**) and **ForEach-Object**, start a local job that produces 100 directory listings of drive **C**, including subfolders. Name the job **LocalDir**. Proceed to the next task while this job is still running.
 
 ### Task 3: Review and manage job status
@@ -81,6 +84,8 @@ The main tasks for this exercise are:
 > **Note:** You must start by querying the parent job, and then expanding its **ChildJob** property. Filter the child jobs so that just the **LON-DC1** job remains, and then receive the results from that job. You'll use a total of four commands to complete this step.
 
 ## Exercise 2: Creating a scheduled job
+
+> **Note:** The `Register-ScheduledJob` cmdlet and the **PSScheduledJob** module are only available in Windows PowerShell 5.1. They are not supported in PowerShell 7. This exercise must be completed in a Windows PowerShell 5.1 console.
 
 ### Exercise scenario 2
 
@@ -110,6 +115,8 @@ The main tasks for this exercise are:
 
     - The job action retrieves all entries from the **Security** event log.
     - The job name is **LocalSecurityLog**.
+
+   > **Note:** The scheduled job uses `Get-EventLog`, which is Windows PowerShell 5.1 only. Because scheduled jobs also run under Windows PowerShell, this is expected.
 
 1. Display a list of job triggers, including time, for the **LocalSecurityLog** scheduled job.
 1. Wait until the time displayed in step 2 has passed.

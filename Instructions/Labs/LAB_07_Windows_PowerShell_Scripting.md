@@ -104,7 +104,9 @@ The main tasks for this exercise are:
 
 ### Task 2: Create a script to configure the ipPhone attribute
 
-1. Create a script named **E:\\Mod07\\Labfiles\\ipPhone.ps1**, and then open it in the Windows PowerShell ISE.
+1. Create a script named **E:\\Mod07\\Labfiles\\ipPhone.ps1**, and then open it in the Windows PowerShell ISE or Visual Studio Code.
+
+   > **Note:** The Windows PowerShell ISE is no longer in active feature development and only supports Windows PowerShell 5.1. For new script development, Microsoft recommends **Visual Studio Code with the PowerShell extension**.
 1. Use **Get-ADGroupMember** to create a query to obtain the membership of the **IPPhoneTest** group.
 1. Create a **ForEach** loop that processes the users that are members of **IPPhoneTest**.
 1. In the loop:

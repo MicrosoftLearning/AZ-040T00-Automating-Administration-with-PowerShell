@@ -17,7 +17,49 @@ lab:
 
 This lab should take approximately **60** minutes to complete.
 
+## Scenario
+
+One of your administrative tasks at Adatum Corporation is to configure advanced PowerShell scripts. You need to ensure that you understand the foundations of working with PowerShell pipeline by sorting, filtering, enumerating, and converting objects.
+
+## Objectives
+
+After completing this lab, you'll be able to:
+
+- Select, sort, and display data by using pipelines.
+- Filter objects out of the pipeline by using basic and advanced syntax forms.
+
+## Lab setup
+
+Virtual machines: **AZ-040T00A-LON-DC1**, **AZ-040T00A-LON-SVR1**, and **AZ-040T00A-LON-CL1**
+
+Username: **Adatum\\Administrator**
+
+Password: **Pa55w.rd**
+
+## Lab startup
+
+1. Select **LON-DC1**.
+1. Sign in by using the following credentials:
+   - Username: **Administrator**
+   - Password: **Pa55w.rd**
+   - Domain: **Adatum**
+
+1. Repeat these steps for **LON-CL1** and **LON-SVR1**.
+
 ## Exercise 1: Selecting, sorting, and displaying data using Powershell Binding
+
+### Exercise scenario 1
+
+In this exercise, you'll produce lists of management information from the computers in your environment. For each task, you'll discover the necessary commands and use **Select-Object**, **Sort‑Object,** and the formatting cmdlets to customize the final output of each command.
+
+The main tasks for this exercise are:
+
+1. Display the current day of the year.
+1. Display information about installed hotfixes.
+1. Display a list of available scopes from the DHCP server.
+1. Display a sorted list of enabled Windows Firewall rules.
+1. Display a sorted list of network neighbors.
+1. Display information from the DNS name resolution cache.
 
 ### Task 1: Display the current day of the year
 
@@ -251,6 +293,18 @@ After completing this exercise, you should have produced several custom reports 
 
 ## Exercise 2: Filtering objects
 
+### Exercise scenario 2
+
+In this exercise, you'll use filtering to produce lists of management information that include only specified data and elements for the reports you must produce.
+
+The main tasks for this exercise are:
+
+1. Display a list of all the users in the Users container of Active Directory.
+1. Create a report displaying the Security event log entries that have the event ID **4624**.
+1. Display a list of the encryption certificates installed on the computer.
+1. Create a report that displays the disk volumes that are running low on space.
+1. Create a report that displays specified Control Panel items.
+
 ### Task 1: Display a list of all the users in the Users container of Active Directory
 
 1. On **LON-CL1**, select **Start**, and then enter **PowerShell**.
@@ -285,6 +339,8 @@ After completing this exercise, you should have produced several custom reports 
    ```
 
 ### Task 2: Create a report displaying the Security event log entries that have the event ID 4624
+
+> **Note:** The commands below use `Get-EventLog`, which is only available in Windows PowerShell 5.1. In PowerShell 7, use `Get-WinEvent -LogName Security | Where-Object Id -eq 4624` instead. Replace `TimeWritten` with `TimeCreated` and `EventID` with `Id`.
 
 1. In the **Administrator: Windows PowerShell** window, enter the following command, and then press the Enter key:
 

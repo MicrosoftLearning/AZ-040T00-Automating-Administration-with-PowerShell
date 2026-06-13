@@ -17,7 +17,43 @@ lab:
 
 This lab should take approximately **15** minutes to complete.
 
+## Scenario
+
+Background jobs provide a useful way to run multiple commands simultaneously and long-running commands in the background. In this lab, you'll learn to create and manage two of the three basic kinds of jobs.
+
+You'll create and configure two scheduled jobs. You'll also create a scheduled task using a Windows PowerShell script that searches for and removes disabled accounts from a certain security group.
+
+## Objectives
+
+After completing this lab, you'll be able to:
+
+- Start and manage jobs.
+- Create a scheduled job.
+
+## Lab setup
+
+Virtual machines: **LON-DC1**, **LON-SVR1**, and **LON-CL1**
+
+Username: **Adatum\\Administrator**
+
+Password: **Pa55w.rd**
+
+For this lab, you'll use the available virtual machine (VM) environment. Before you begin the lab, complete the following steps:
+
+1. Open **LON-DC1** and sign in as **Adatum\\Administrator** with the password **Pa55w.rd**.
+1. Repeat step 1 for **LON-SVR1** and **LON-CL1**.
+
 ## Exercise 1: Starting and managing jobs
+
+### Exercise scenario 1
+
+In this exercise, you'll start jobs using two of the basic job types.
+
+The main tasks for this exercise are:
+
+1. Start a Windows PowerShell remote job.
+1. Start a local job.
+1. Review and manage job status.
 
 ### Task 1: Start a Windows PowerShell remote job
 
@@ -55,6 +91,8 @@ This lab should take approximately **15** minutes to complete.
    Start-Job –ScriptBlock { Get-EventLog –LogName Security } –Name LocalSecurity
    ```
 
+   > **Note:** `Get-EventLog` is only available in Windows PowerShell 5.1. In PowerShell 7, use `Start-Job -ScriptBlock { Get-WinEvent -LogName Security } -Name LocalSecurity` instead.
+
 1. To start a local job that produces 100 directory listings, enter the following command, and then press the Enter key:
 
    ```powershell
@@ -91,13 +129,28 @@ This lab should take approximately **15** minutes to complete.
    Receive-Job –Name RemoteNetAdapt
    ```
 
-1. To receive the results of the **RemoteDisks** job, enter the following command, and then press the Enter key:
+1. To receive the results of the **RemoteDisks** job from **LON-DC1** only, enter the following command, and then press the Enter key:
 
    ```powershell
-   Get-Job –Name RemoteDisks –IncludeChildJob | Receive-Job
+   Get-Job -Name RemoteDisks | 
+     Select-Object -ExpandProperty ChildJobs | 
+     Where-Object { $_.Location -eq 'LON-DC1' } | 
+     Receive-Job
    ```
 
 ## Exercise 2: Creating a scheduled job
+
+> **Note:** The `Register-ScheduledJob` cmdlet and the **PSScheduledJob** module are only available in Windows PowerShell 5.1. Ensure you are running this exercise in a Windows PowerShell 5.1 console, not PowerShell 7.
+
+### Exercise scenario 2
+
+In this exercise, you'll create and run a scheduled job and retrieve its results. You'll then create and run a scheduled task from a Windows PowerShell script that removes a disabled user from a security group in AD DS.
+
+The main tasks for this exercise are:
+
+1. Create job options and job triggers.
+1. Create a scheduled job and retrieve results.
+1. Use a Windows PowerShell script as a scheduled task.
 
 ### Task 1: Create job options and a job trigger
 

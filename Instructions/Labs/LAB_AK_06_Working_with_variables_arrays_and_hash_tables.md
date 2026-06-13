@@ -18,7 +18,41 @@ lab:
 
 This lab should take approximately **45** minutes to complete.
 
+## Scenario
+
+You're preparing to create scripts to automate server administration in your organization. Before you begin, you want to practice working with variables, arrays, and hash tables.
+
+## Objectives
+
+After completing this lab, you'll be able to:
+
+- Work with variable types.
+- Use arrays.
+- Use hash tables.
+
+## Lab setup
+
+Virtual machines: **AZ-040T00A-LON-DC1**, **AZ-040T00A-LON-SVR1**, and **AZ-040T00A-LON-CL1**
+
+Username: **Adatum\\Administrator**
+
+Password: **Pa55w.rd**
+
+For this lab, you'll use the available virtual machine environment. Before you begin the lab, complete the following steps:
+
+1. Open **LON-DC1** and sign in as **Adatum\\Administrator** with the password **Pa55w.rd**.
+1. Repeat step 1 for **LON-SVR1** and **LON-CL1**.
+
 ## Exercise 1: Working with variable types
+
+### Exercise scenario 1
+
+You first plan to practice working with different types of variables.
+
+The main tasks for this exercise are:
+
+1. Use string variables.
+1. Use DateTime variables.
 
 ### Task 1: Use string variables
 
@@ -122,6 +156,15 @@ This lab should take approximately **45** minutes to complete.
 
 ## Exercise 2: Using arrays
 
+### Exercise scenario 2
+
+Now that you've practiced using different types of variables, you want to work with arrays.
+
+The main tasks for this exercise are:
+
+1. Use an array to update the department for users.
+1. Use a generic list.
+
 ### Task 1: Use an array to update the department for users
 
 1. To query all users in the **Marketing** department, at the Windows PowerShell prompt, enter the following command, and then press the Enter key:
@@ -170,33 +213,35 @@ This lab should take approximately **45** minutes to complete.
 
 1. Leave the Windows PowerShell prompt open for the next task.
 
-### Task 2: Use an array list
+### Task 2: Use a generic list
 
-1. To create an array list of computer names, at the Windows PowerShell prompt, enter the following command, and then press the Enter key:
+> **Note:** `ArrayList` is deprecated in favor of the strongly typed generic `List[T]` collection. For new scripts, use `[System.Collections.Generic.List[string]]` instead.
+
+1. To create a generic list of computer names, at the Windows PowerShell prompt, enter the following command, and then press the Enter key:
 
    ```powershell
-   [System.Collections.ArrayList]$computers="LON-SRV1","LON-SRV2","LON-DC1"
+   [System.Collections.Generic.List[string]]$computers="LON-SRV1","LON-SRV2","LON-DC1"
    ```
 
-1. To verify that the `$computers` array list is not fixed-size, enter the following command, and then press the Enter key:
+1. To verify that the `$computers` list is not fixed-size, enter the following command, and then press the Enter key:
 
    ```powershell
    $computers.IsFixedSize
    ```
 
-1. To add a computer name to the `$computers` array list, enter the following command, and then press the Enter key:
+1. To add a computer name to the `$computers` list, enter the following command, and then press the Enter key:
 
    ```powershell
    $computers.Add("LON-DC2")
    ```
 
-1. To remove a computer name from the `$computers` array list, enter the following command, and then press the Enter key:
+1. To remove a computer name from the `$computers` list, enter the following command, and then press the Enter key:
 
    ```powershell
    $computers.Remove("LON-SRV2")
    ```
 
-1. To review the items in the `$computers` array list, enter the following command, and then press the Enter key:
+1. To review the items in the `$computers` list, enter the following command, and then press the Enter key:
 
    ```powershell
    $computers
@@ -205,6 +250,14 @@ This lab should take approximately **45** minutes to complete.
 1. Leave the Windows PowerShell prompt open for the next exercise.
 
 ## Exercise 3: Using hash tables
+
+### Exercise scenario 3
+
+After using variables and arrays, you plan to practice working with hash tables. You want to learn how working with hash tables differs from arrays and generic lists.
+
+The main task for this exercise is:
+
+- Use a hash table.
 
 ### Task 1: Use a hash table
 

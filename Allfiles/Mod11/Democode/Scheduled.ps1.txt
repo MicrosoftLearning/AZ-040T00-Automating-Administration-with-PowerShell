@@ -1,5 +1,7 @@
-﻿# Open this file in the ISE. Highlight one line and press F8 to
-# execute just that line. 
+﻿# Open this file in the ISE or VS Code. Highlight one line and press F8 to
+# execute just that line.
+# NOTE: PSScheduledJob and Get-EventLog are only available in Windows PowerShell 5.1.
+# This demo must be run in a Windows PowerShell 5.1 console.
 
 # 1
 Import-Module PSScheduledJob

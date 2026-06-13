@@ -81,7 +81,7 @@ Now that you've practiced using different types of variables, you want to work w
 The main tasks for this exercise are:
 
 1. Use an array to update the department for users.
-1. Use an array list.
+1. Use a generic list.
 
 ### Task 1: Use an array to update the department for users
 
@@ -94,9 +94,11 @@ The main tasks for this exercise are:
 1. Query all AD DS users in the **Business Development** department and verify that it matches the previous count from the Marketing department.
 1. Leave the Windows PowerShell prompt open for the next task.
 
-### Task 2: Use an array list
+### Task 2: Use a generic list
 
-1. Create an arraylist named `$computers` with the values **LON-SRV1**, **LON-SRV2**, and **LON-DC1**.
+> **Note:** `ArrayList` is deprecated in favor of the strongly typed generic `List[T]` collection. For new scripts, use `[System.Collections.Generic.List[string]]` instead.
+
+1. Create a generic list of strings named `$computers` with the values **LON-SRV1**, **LON-SRV2**, and **LON-DC1**.
 1. Verify that `$computers` doesn't have a fixed size.
 1. Add **LON-DC2** to `$computers`.
 1. Remove **LON-SRV2** from `$computers`.
@@ -107,7 +109,7 @@ The main tasks for this exercise are:
 
 ### Exercise scenario 3
 
-After using variables and arrays, you plan to practice working with hash tables. You want to learn how working with hash tables differs from arrays and array lists.
+After using variables and arrays, you plan to practice working with hash tables. You want to learn how working with hash tables differs from arrays and generic lists.
 
 The main task for this exercise is:
 

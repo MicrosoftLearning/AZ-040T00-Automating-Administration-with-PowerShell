@@ -19,7 +19,45 @@ lab:
 
 This lab should take approximately **60** minutes to complete.
 
+## Scenario
+
+You've created a new Microsoft 365 tenant. As a new administrator, you want to try using PowerShell to manage some of the Microsoft 365 services before you start deploying them to users.
+
+## Objectives
+
+After completing this lab, you'll be able to:
+
+- Manage users in Microsoft Entra ID.
+- Manage Exchange Online.
+- Manage SharePoint Online.
+- Manage Microsoft Teams.
+
+## Lab setup
+
+Virtual machines: **LON-DC1** and **LON-CL1**
+
+Username: **Adatum\\Administrator**
+
+Password: **Pa55w.rd**
+
+For this lab, you'll use the available virtual machine environment. Before you begin the lab, complete the following steps:
+
+1. Open **LON-DC1** and sign in as **Adatum\\Administrator** with the password **Pa55w.rd**.
+1. Repeat step 1 for **LON-CL1**.
+
+> **Note**: This lab requires an Office 365 tenant and a user with Global Administrator permissions in that tenant.
+
 ## Exercise 1: Managing users and groups in Microsoft Entra ID
+
+### Exercise scenario 1
+
+You need to make sure that you understand how to create and manage users. You're particularly interested in learning how to assign licenses to users. In this exercise, you'll create an administrative user and standard user. You'll also create and populate a group.
+
+The main tasks for this exercise are:
+
+1. Connect to Microsoft Entra ID.
+1. Create a new administrative user.
+1. Create and license a new user.
 
 ### Task 1: Connect to Microsoft Entra ID
 
@@ -197,6 +235,16 @@ The PowerShell script execution policy must be set to remote signed or less rest
 
 ## Exercise 2: Managing Exchange Online
 
+### Scenario 2
+
+In this exercise, you will create a new room mailbox and configure the resource booking properties to automatically accept meeting requests. You will also verify that the resource booking works as expected.
+
+The main tasks for this exercise are:
+
+1. Connect to Exchange Online.
+1. Create a room mailbox.
+1. Verify room resource booking.
+
 ### Task 1: Connect to Exchange Online
 
 1. To install the **ExchangeOnlineManagement** module on **LON-CL1**, in the **Administrator: Windows PowerShell** console, enter the following command, and then press the Enter key (when prompted for confirmation, enter `A` and press the Enter key again):
@@ -261,6 +309,13 @@ The PowerShell script execution policy must be set to remote signed or less rest
 
 ## Exercise 3: Managing SharePoint Online
 
+You're familiar with the web-based administrative console used for managing SharePoint Online. It serves your needs well, but you want to test the process for creating a site by using Windows PowerShell in case you ever want to automate the process.
+
+The main tasks for this exercise are:
+
+1. Connect to SharePoint Online.
+1. Create a new site.
+
 ### Task 1: Connect to SharePoint Online
 
 1. To install the SharePoint Online Management Shell, on **LON-CL1**, in the **Administrator: Windows PowerShell** console, enter the following command, and then press the Enter key (when prompted for confirmation, enter `A` and press the Enter key again):
@@ -311,6 +366,14 @@ The PowerShell script execution policy must be set to remote signed or less rest
    ```
 
 ## Exercise 4: Managing Microsoft Teams
+
+The Sales department is interested in using Microsoft Teams for collaboration. To help them experiment with using Microsoft Teams, you'll create a team by using PowerShell. You'll then give access to Allan Yoo from the Sales department.
+
+The main tasks for this exercise are:
+
+1. Connect to Microsoft Teams.
+1. Create a new team.
+1. Verify access to the team.
 
 ### Task 1: Connect to Microsoft Teams
 
